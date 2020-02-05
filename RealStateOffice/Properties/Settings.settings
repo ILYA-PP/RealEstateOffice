@@ -1,0 +1,22 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RealStateOffice.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="realestateofficeConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Database=realestateoffice;Password=pgadmin;Server=127.0.0.1;User=postgres&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.CData.PostgreSQL&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Database=realestateoffice;Password=pgadmin;Server=127.0.0.1;User=postgres</Value>
+    </Setting>
+    <Setting Name="realestateofficeConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Host=srv-per-websql;Database=realestateoffice;Username=postgres;Password=Techno2018&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Npgsql&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Host=srv-per-websql;Database=realestateoffice;Username=postgres;Password=Techno2018</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
