@@ -29,6 +29,9 @@ namespace RealStateOffice
             formsButtons.Add(editDemandB, new Demands());
             formsButtons.Add(editDealB, new Deals());
             GetAddress();
+            GetAddress1();
+            GetAddress2();
+            GetAddress3();
             panelsLabels = new Dictionary<Label, Panel>(6);
             panelsLabels.Add(clientL, clientPanel);
             panelsLabels.Add(agentL, agentPanel);
@@ -89,27 +92,36 @@ namespace RealStateOffice
             addressObjectСB.DataSource = addressDemandCB.DataSource = temp;
             addressObjectСB.ValueMember = addressDemandCB.ValueMember = "ID";
             addressObjectСB.DisplayMember = addressDemandCB.DisplayMember = "Name";
-            temp.Clear();
+        }
+        private void GetAddress1()
+        {
+            temp = new List<Obj>();
             foreach (_object o in db._object)
                 temp.Add(new Obj(o.object_id, $"Широта: {o.latitude}, долгота: {o.longitude}"));
             objectSupplyCB.DataSource = temp;
             objectSupplyCB.ValueMember = "ID";
             objectSupplyCB.DisplayMember = "Name";
-            temp.Clear();
+        }
+        private void GetAddress2()
+        {
+            temp = new List<Obj>();
             foreach (supply s in db.supply)
                 temp.Add(new Obj(s.supply_id, $"г.{s._object.address.city}, ул.{s._object.address.street}, " +
                     $"д.{s._object.address.house_number}, кв.{s._object.address.apartament_number}" +
                     $"Шир.: {s._object.latitude}, долг.: {s._object.longitude}"));
             supplyDealCB.DataSource = temp;
             supplyDealCB.ValueMember = "ID";
-            supplyDealCB.DisplayMember = "ID";
-            temp.Clear();
+            supplyDealCB.DisplayMember = "Name";
+        }
+        private void GetAddress3()
+        {
+            temp = new List<Obj>();
             foreach (demand d in db.demand)
                 temp.Add(new Obj(d.demand_id, $"г.{d.address.city}, ул.{d.address.street}, " +
                     $"д.{d.address.house_number}, кв.{d.address.apartament_number}"));
             demandDealCB.DataSource = temp;
             demandDealCB.ValueMember = "ID";
-            demandDealCB.DisplayMember = "ID";
+            demandDealCB.DisplayMember = "Name";
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -274,13 +286,9 @@ namespace RealStateOffice
             }
         }
 
-        private void dealCB_SelectedValueChanged(object sender, EventArgs e)
+        private void dealCB_ValueChange(object sender, EventArgs e)
         {
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            //сделать проверку на число
             if (supplyDealCB.SelectedValue == null || demandDealCB.SelectedValue == null)
                 return;
             double clientSellerSum = 0, clientBuyerSum = 0, agentSellerSum = 0,

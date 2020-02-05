@@ -43,7 +43,6 @@
             this.agentSellerL = new System.Windows.Forms.Label();
             this.clientBuyerL = new System.Windows.Forms.Label();
             this.clientSellerL = new System.Windows.Forms.Label();
-            this.supplyDealCB = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
             this.demandDealCB = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
@@ -141,7 +140,7 @@
             this.tableAdapterManager = new RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager();
             this.clientTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.clientTableAdapter();
             this.agentTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.agentTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
+            this.supplyDealCB = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -280,13 +279,12 @@
             // 
             // dealPanel
             // 
-            this.dealPanel.Controls.Add(this.button1);
+            this.dealPanel.Controls.Add(this.supplyDealCB);
             this.dealPanel.Controls.Add(this.companyProfitL);
             this.dealPanel.Controls.Add(this.agentBuyerL);
             this.dealPanel.Controls.Add(this.agentSellerL);
             this.dealPanel.Controls.Add(this.clientBuyerL);
             this.dealPanel.Controls.Add(this.clientSellerL);
-            this.dealPanel.Controls.Add(this.supplyDealCB);
             this.dealPanel.Controls.Add(this.label33);
             this.dealPanel.Controls.Add(this.demandDealCB);
             this.dealPanel.Controls.Add(this.label35);
@@ -349,15 +347,6 @@
             this.clientSellerL.TabIndex = 23;
             this.clientSellerL.Text = "Стоимость для клиента-продавца:";
             // 
-            // supplyDealCB
-            // 
-            this.supplyDealCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.supplyDealCB.FormattingEnabled = true;
-            this.supplyDealCB.Location = new System.Drawing.Point(117, 98);
-            this.supplyDealCB.Name = "supplyDealCB";
-            this.supplyDealCB.Size = new System.Drawing.Size(287, 28);
-            this.supplyDealCB.TabIndex = 21;
-            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -376,6 +365,7 @@
             this.demandDealCB.Name = "demandDealCB";
             this.demandDealCB.Size = new System.Drawing.Size(287, 28);
             this.demandDealCB.TabIndex = 10;
+            this.demandDealCB.SelectedIndexChanged += new System.EventHandler(this.dealCB_ValueChange);
             // 
             // label35
             // 
@@ -1403,15 +1393,15 @@
             // 
             this.agentTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
+            // supplyDealCB
             // 
-            this.button1.Location = new System.Drawing.Point(46, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.supplyDealCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.supplyDealCB.FormattingEnabled = true;
+            this.supplyDealCB.Location = new System.Drawing.Point(117, 96);
+            this.supplyDealCB.Name = "supplyDealCB";
+            this.supplyDealCB.Size = new System.Drawing.Size(287, 28);
+            this.supplyDealCB.TabIndex = 30;
+            this.supplyDealCB.SelectedIndexChanged += new System.EventHandler(this.dealCB_ValueChange);
             // 
             // Main
             // 
@@ -1540,7 +1530,6 @@
         private System.Windows.Forms.Label agentSellerL;
         private System.Windows.Forms.Label clientBuyerL;
         private System.Windows.Forms.Label clientSellerL;
-        private System.Windows.Forms.ComboBox supplyDealCB;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox demandDealCB;
         private System.Windows.Forms.Label label35;
@@ -1574,6 +1563,6 @@
         private System.Windows.Forms.TextBox maxAreaDemTB;
         private System.Windows.Forms.TextBox minAreaDemTB;
         private System.Windows.Forms.Label companyProfitL;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox supplyDealCB;
     }
 }
