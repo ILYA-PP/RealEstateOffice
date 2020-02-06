@@ -15,7 +15,6 @@ namespace RealStateOffice
         public Objects()
         {
             InitializeComponent();
-
         }
 
         private void objectBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -73,6 +72,15 @@ namespace RealStateOffice
         private void typeCB_SelectedIndexChanged(object sender, EventArgs e)
         {
             Search.Filter(objectDataGridView, 6, typeCB.Text);
+        }
+
+        private void objectDataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            if (((DataGridView)sender).SelectedRows.Count == 0)
+                return;
+            int id = (int)((DataGridView)sender).SelectedRows[0].Cells[0].Value;
+            landBindingSource.Filter = houseBindingSource.Filter =
+            apartmentBindingSource.Filter = $"[object_id] = {id}";
         }
     }
 }

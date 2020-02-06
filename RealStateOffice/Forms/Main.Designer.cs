@@ -38,6 +38,7 @@
             this.agentL = new System.Windows.Forms.Label();
             this.clientL = new System.Windows.Forms.Label();
             this.dealPanel = new System.Windows.Forms.Panel();
+            this.supplyDealCB = new System.Windows.Forms.ComboBox();
             this.companyProfitL = new System.Windows.Forms.Label();
             this.agentBuyerL = new System.Windows.Forms.Label();
             this.agentSellerL = new System.Windows.Forms.Label();
@@ -66,7 +67,7 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.maxPriceDenamdNUD = new System.Windows.Forms.NumericUpDown();
+            this.maxPriceDemandNUD = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
             this.typeDemandCB = new System.Windows.Forms.ComboBox();
             this.objecttypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -140,7 +141,6 @@
             this.tableAdapterManager = new RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager();
             this.clientTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.clientTableAdapter();
             this.agentTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.agentTableAdapter();
-            this.supplyDealCB = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -153,7 +153,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.minFloorsDemNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxFloorDemNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minFloorDemNUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maxPriceDenamdNUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxPriceDemandNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.objecttypeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).BeginInit();
@@ -189,12 +189,12 @@
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.dealPanel);
-            this.splitContainer2.Panel2.Controls.Add(this.demandPanel);
             this.splitContainer2.Panel2.Controls.Add(this.supplyPanel);
             this.splitContainer2.Panel2.Controls.Add(this.objectPanel);
             this.splitContainer2.Panel2.Controls.Add(this.agentPanel);
             this.splitContainer2.Panel2.Controls.Add(this.clientPanel);
+            this.splitContainer2.Panel2.Controls.Add(this.dealPanel);
+            this.splitContainer2.Panel2.Controls.Add(this.demandPanel);
             this.splitContainer2.Size = new System.Drawing.Size(574, 375);
             this.splitContainer2.SplitterDistance = 154;
             this.splitContainer2.SplitterWidth = 1;
@@ -296,6 +296,16 @@
             this.dealPanel.Name = "dealPanel";
             this.dealPanel.Size = new System.Drawing.Size(419, 375);
             this.dealPanel.TabIndex = 30;
+            // 
+            // supplyDealCB
+            // 
+            this.supplyDealCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.supplyDealCB.FormattingEnabled = true;
+            this.supplyDealCB.Location = new System.Drawing.Point(117, 96);
+            this.supplyDealCB.Name = "supplyDealCB";
+            this.supplyDealCB.Size = new System.Drawing.Size(287, 28);
+            this.supplyDealCB.TabIndex = 30;
+            this.supplyDealCB.SelectedIndexChanged += new System.EventHandler(this.dealCB_ValueChange);
             // 
             // companyProfitL
             // 
@@ -427,7 +437,7 @@
             this.demandPanel.Controls.Add(this.label41);
             this.demandPanel.Controls.Add(this.label39);
             this.demandPanel.Controls.Add(this.label38);
-            this.demandPanel.Controls.Add(this.maxPriceDenamdNUD);
+            this.demandPanel.Controls.Add(this.maxPriceDemandNUD);
             this.demandPanel.Controls.Add(this.label29);
             this.demandPanel.Controls.Add(this.typeDemandCB);
             this.demandPanel.Controls.Add(this.label28);
@@ -628,19 +638,18 @@
             this.label38.TabIndex = 30;
             this.label38.Text = "Мин. площ.";
             // 
-            // maxPriceDenamdNUD
+            // maxPriceDemandNUD
             // 
-            this.maxPriceDenamdNUD.Enabled = false;
-            this.maxPriceDenamdNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.maxPriceDenamdNUD.Location = new System.Drawing.Point(97, 234);
-            this.maxPriceDenamdNUD.Maximum = new decimal(new int[] {
+            this.maxPriceDemandNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.maxPriceDemandNUD.Location = new System.Drawing.Point(97, 234);
+            this.maxPriceDemandNUD.Maximum = new decimal(new int[] {
             1874919423,
             2328306,
             0,
             0});
-            this.maxPriceDenamdNUD.Name = "maxPriceDenamdNUD";
-            this.maxPriceDenamdNUD.Size = new System.Drawing.Size(43, 26);
-            this.maxPriceDenamdNUD.TabIndex = 29;
+            this.maxPriceDemandNUD.Name = "maxPriceDemandNUD";
+            this.maxPriceDemandNUD.Size = new System.Drawing.Size(43, 26);
+            this.maxPriceDemandNUD.TabIndex = 29;
             // 
             // label29
             // 
@@ -733,7 +742,6 @@
             // 
             // minPriceDemandNUD
             // 
-            this.minPriceDemandNUD.Enabled = false;
             this.minPriceDemandNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.minPriceDemandNUD.Location = new System.Drawing.Point(97, 202);
             this.minPriceDemandNUD.Maximum = new decimal(new int[] {
@@ -1393,16 +1401,6 @@
             // 
             this.agentTableAdapter.ClearBeforeFill = true;
             // 
-            // supplyDealCB
-            // 
-            this.supplyDealCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.supplyDealCB.FormattingEnabled = true;
-            this.supplyDealCB.Location = new System.Drawing.Point(117, 96);
-            this.supplyDealCB.Name = "supplyDealCB";
-            this.supplyDealCB.Size = new System.Drawing.Size(287, 28);
-            this.supplyDealCB.TabIndex = 30;
-            this.supplyDealCB.SelectedIndexChanged += new System.EventHandler(this.dealCB_ValueChange);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1427,7 +1425,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.minFloorsDemNUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxFloorDemNUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minFloorDemNUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maxPriceDenamdNUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxPriceDemandNUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.objecttypeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).EndInit();
@@ -1467,7 +1465,7 @@
         private System.Windows.Forms.Panel objectPanel;
         private System.Windows.Forms.Panel supplyPanel;
         private System.Windows.Forms.Panel demandPanel;
-        private System.Windows.Forms.NumericUpDown maxPriceDenamdNUD;
+        private System.Windows.Forms.NumericUpDown maxPriceDemandNUD;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.ComboBox typeDemandCB;
         private System.Windows.Forms.Label label28;

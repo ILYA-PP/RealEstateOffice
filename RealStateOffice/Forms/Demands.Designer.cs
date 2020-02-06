@@ -35,43 +35,14 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.demandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.realestateofficeDataSet = new RealStateOffice.realestateofficeDataSet();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.demandBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.searchTB = new System.Windows.Forms.ToolStripTextBox();
             this.resetB = new System.Windows.Forms.ToolStripButton();
             this.demandDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.demandTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.demandTableAdapter();
-            this.tableAdapterManager = new RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.house_demBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.house_demTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.house_demTableAdapter();
             this.house_demDataGridView = new System.Windows.Forms.DataGridView();
-            this.land_demBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.land_demTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.land_demTableAdapter();
-            this.land_demDataGridView = new System.Windows.Forms.DataGridView();
-            this.apartment_demBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.apartment_demTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.apartment_demTableAdapter();
-            this.apartment_demDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,9 +50,15 @@
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.house_demBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.land_demDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.land_demBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.apartment_demDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,6 +66,25 @@
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apartment_demBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.demandTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.demandTableAdapter();
+            this.tableAdapterManager = new RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager();
+            this.house_demTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.house_demTableAdapter();
+            this.land_demTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.land_demTableAdapter();
+            this.apartment_demTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.apartment_demTableAdapter();
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.clientTableAdapter();
+            this.agentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.agentTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.agentTableAdapter();
+            this.objecttypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.objecttypeTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.objecttypeTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.demandBindingNavigator)).BeginInit();
             this.demandBindingNavigator.SuspendLayout();
@@ -97,14 +93,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.demandDataGridView)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.house_demBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.house_demDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.land_demBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.house_demBindingSource)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.land_demDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartment_demBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.land_demBindingSource)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.apartment_demDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartment_demBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objecttypeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -117,44 +116,35 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(511, 462);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(511, 639);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // demandBindingNavigator
             // 
             this.demandBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.demandBindingNavigator.BindingSource = this.demandBindingSource;
-            this.demandBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.demandBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.demandBindingNavigator.CountItem = null;
+            this.demandBindingNavigator.DeleteItem = null;
             this.demandBindingNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
             this.demandBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
             this.demandBindingNavigatorSaveItem,
             this.toolStripLabel1,
             this.searchTB,
             this.resetB});
             this.demandBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.demandBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.demandBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.demandBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.demandBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.demandBindingNavigator.MoveFirstItem = null;
+            this.demandBindingNavigator.MoveLastItem = null;
+            this.demandBindingNavigator.MoveNextItem = null;
+            this.demandBindingNavigator.MovePreviousItem = null;
             this.demandBindingNavigator.Name = "demandBindingNavigator";
-            this.demandBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.demandBindingNavigator.Size = new System.Drawing.Size(511, 36);
+            this.demandBindingNavigator.PositionItem = null;
+            this.demandBindingNavigator.Size = new System.Drawing.Size(511, 49);
             this.demandBindingNavigator.TabIndex = 1;
             this.demandBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -164,7 +154,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 33);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 46);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // demandBindingSource
@@ -177,102 +167,27 @@
             this.realestateofficeDataSet.DataSetName = "realestateofficeDataSet";
             this.realestateofficeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 32);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 32);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 32);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 32);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 35);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(40, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 35);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 32);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 32);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 35);
-            // 
             // demandBindingNavigatorSaveItem
             // 
             this.demandBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.demandBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("demandBindingNavigatorSaveItem.Image")));
             this.demandBindingNavigatorSaveItem.Name = "demandBindingNavigatorSaveItem";
-            this.demandBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 32);
+            this.demandBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 33);
             this.demandBindingNavigatorSaveItem.Text = "Save Data";
             this.demandBindingNavigatorSaveItem.Click += new System.EventHandler(this.demandBindingNavigatorSaveItem_Click);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(42, 32);
+            this.toolStripLabel1.Size = new System.Drawing.Size(42, 33);
             this.toolStripLabel1.Text = "Поиск";
             // 
             // searchTB
             // 
             this.searchTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.searchTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.searchTB.Name = "searchTB";
-            this.searchTB.Size = new System.Drawing.Size(150, 35);
+            this.searchTB.Size = new System.Drawing.Size(150, 36);
             // 
             // resetB
             // 
@@ -280,13 +195,12 @@
             this.resetB.Image = global::RealStateOffice.Properties.Resources.reset_6618;
             this.resetB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.resetB.Name = "resetB";
-            this.resetB.Size = new System.Drawing.Size(23, 32);
+            this.resetB.Size = new System.Drawing.Size(23, 33);
             this.resetB.Text = "toolStripButton1";
             // 
             // demandDataGridView
             // 
             this.demandDataGridView.AllowUserToAddRows = false;
-            this.demandDataGridView.AllowUserToDeleteRows = false;
             this.demandDataGridView.AutoGenerateColumns = false;
             this.demandDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.demandDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -300,85 +214,12 @@
             this.dataGridViewTextBoxColumn7});
             this.demandDataGridView.DataSource = this.demandBindingSource;
             this.demandDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.demandDataGridView.Location = new System.Drawing.Point(3, 39);
+            this.demandDataGridView.Location = new System.Drawing.Point(3, 52);
             this.demandDataGridView.Name = "demandDataGridView";
-            this.demandDataGridView.ReadOnly = true;
-            this.demandDataGridView.Size = new System.Drawing.Size(505, 257);
+            this.demandDataGridView.Size = new System.Drawing.Size(505, 346);
             this.demandDataGridView.TabIndex = 0;
+            this.demandDataGridView.SelectionChanged += new System.EventHandler(this.demandDataGridView_SelectionChanged);
             this.demandDataGridView.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.demandDataGridView_UserDeletingRow);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "demand_id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "demand_id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "client_id";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Клиент";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "agent_id";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Агент";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "address_id";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Адрес";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "type_id";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Тип";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "min_price";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Мин. цена";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "max_price";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Макс. цена";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // demandTableAdapter
-            // 
-            this.demandTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.addressTableAdapter = null;
-            this.tableAdapterManager.agentTableAdapter = null;
-            this.tableAdapterManager.apartment_demTableAdapter = null;
-            this.tableAdapterManager.apartmentTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.clientTableAdapter = null;
-            this.tableAdapterManager.dealTableAdapter = null;
-            this.tableAdapterManager.demandTableAdapter = this.demandTableAdapter;
-            this.tableAdapterManager.house_demTableAdapter = null;
-            this.tableAdapterManager.houseTableAdapter = null;
-            this.tableAdapterManager.land_demTableAdapter = null;
-            this.tableAdapterManager.landTableAdapter = null;
-            this.tableAdapterManager.objectTableAdapter = null;
-            this.tableAdapterManager.objecttypeTableAdapter = null;
-            this.tableAdapterManager.supplyTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // tabControl1
             // 
@@ -386,10 +227,10 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(3, 302);
+            this.tabControl1.Location = new System.Drawing.Point(3, 404);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(505, 157);
+            this.tabControl1.Size = new System.Drawing.Size(505, 210);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -404,41 +245,9 @@
             this.tabPage1.Text = "Дом";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.AutoScroll = true;
-            this.tabPage2.Controls.Add(this.land_demDataGridView);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(497, 131);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Земля";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.AutoScroll = true;
-            this.tabPage3.Controls.Add(this.apartment_demDataGridView);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(497, 131);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Квартира";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // house_demBindingSource
-            // 
-            this.house_demBindingSource.DataMember = "house_dem";
-            this.house_demBindingSource.DataSource = this.realestateofficeDataSet;
-            // 
-            // house_demTableAdapter
-            // 
-            this.house_demTableAdapter.ClearBeforeFill = true;
-            // 
             // house_demDataGridView
             // 
+            this.house_demDataGridView.AllowUserToAddRows = false;
             this.house_demDataGridView.AutoGenerateColumns = false;
             this.house_demDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.house_demDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -456,60 +265,6 @@
             this.house_demDataGridView.Name = "house_demDataGridView";
             this.house_demDataGridView.Size = new System.Drawing.Size(491, 125);
             this.house_demDataGridView.TabIndex = 0;
-            // 
-            // land_demBindingSource
-            // 
-            this.land_demBindingSource.DataMember = "land_dem";
-            this.land_demBindingSource.DataSource = this.realestateofficeDataSet;
-            // 
-            // land_demTableAdapter
-            // 
-            this.land_demTableAdapter.ClearBeforeFill = true;
-            // 
-            // land_demDataGridView
-            // 
-            this.land_demDataGridView.AutoGenerateColumns = false;
-            this.land_demDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.land_demDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.land_demDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17});
-            this.land_demDataGridView.DataSource = this.land_demBindingSource;
-            this.land_demDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.land_demDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.land_demDataGridView.Name = "land_demDataGridView";
-            this.land_demDataGridView.Size = new System.Drawing.Size(491, 125);
-            this.land_demDataGridView.TabIndex = 0;
-            // 
-            // apartment_demBindingSource
-            // 
-            this.apartment_demBindingSource.DataMember = "apartment_dem";
-            this.apartment_demBindingSource.DataSource = this.realestateofficeDataSet;
-            // 
-            // apartment_demTableAdapter
-            // 
-            this.apartment_demTableAdapter.ClearBeforeFill = true;
-            // 
-            // apartment_demDataGridView
-            // 
-            this.apartment_demDataGridView.AutoGenerateColumns = false;
-            this.apartment_demDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.apartment_demDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.apartment_demDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21,
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24});
-            this.apartment_demDataGridView.DataSource = this.apartment_demBindingSource;
-            this.apartment_demDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.apartment_demDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.apartment_demDataGridView.Name = "apartment_demDataGridView";
-            this.apartment_demDataGridView.Size = new System.Drawing.Size(491, 125);
-            this.apartment_demDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn8
             // 
@@ -554,6 +309,40 @@
             this.dataGridViewTextBoxColumn14.HeaderText = "Макс. этаж.";
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
             // 
+            // house_demBindingSource
+            // 
+            this.house_demBindingSource.DataMember = "house_dem";
+            this.house_demBindingSource.DataSource = this.realestateofficeDataSet;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.AutoScroll = true;
+            this.tabPage2.Controls.Add(this.land_demDataGridView);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(497, 131);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Земля";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // land_demDataGridView
+            // 
+            this.land_demDataGridView.AllowUserToAddRows = false;
+            this.land_demDataGridView.AutoGenerateColumns = false;
+            this.land_demDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.land_demDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.land_demDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17});
+            this.land_demDataGridView.DataSource = this.land_demBindingSource;
+            this.land_demDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.land_demDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.land_demDataGridView.Name = "land_demDataGridView";
+            this.land_demDataGridView.Size = new System.Drawing.Size(491, 125);
+            this.land_demDataGridView.TabIndex = 0;
+            // 
             // dataGridViewTextBoxColumn15
             // 
             this.dataGridViewTextBoxColumn15.DataPropertyName = "demand_id";
@@ -572,6 +361,44 @@
             this.dataGridViewTextBoxColumn17.DataPropertyName = "max_area";
             this.dataGridViewTextBoxColumn17.HeaderText = "Максимальная площадь";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // land_demBindingSource
+            // 
+            this.land_demBindingSource.DataMember = "land_dem";
+            this.land_demBindingSource.DataSource = this.realestateofficeDataSet;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.apartment_demDataGridView);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(497, 184);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Квартира";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // apartment_demDataGridView
+            // 
+            this.apartment_demDataGridView.AllowUserToAddRows = false;
+            this.apartment_demDataGridView.AutoGenerateColumns = false;
+            this.apartment_demDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.apartment_demDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.apartment_demDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24});
+            this.apartment_demDataGridView.DataSource = this.apartment_demBindingSource;
+            this.apartment_demDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.apartment_demDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.apartment_demDataGridView.Name = "apartment_demDataGridView";
+            this.apartment_demDataGridView.Size = new System.Drawing.Size(491, 178);
+            this.apartment_demDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn18
             // 
@@ -616,11 +443,138 @@
             this.dataGridViewTextBoxColumn24.HeaderText = "Макс. этаж";
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
             // 
+            // apartment_demBindingSource
+            // 
+            this.apartment_demBindingSource.DataMember = "apartment_dem";
+            this.apartment_demBindingSource.DataSource = this.realestateofficeDataSet;
+            // 
+            // demandTableAdapter
+            // 
+            this.demandTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.addressTableAdapter = null;
+            this.tableAdapterManager.agentTableAdapter = null;
+            this.tableAdapterManager.apartment_demTableAdapter = null;
+            this.tableAdapterManager.apartmentTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.clientTableAdapter = null;
+            this.tableAdapterManager.dealTableAdapter = null;
+            this.tableAdapterManager.demandTableAdapter = this.demandTableAdapter;
+            this.tableAdapterManager.house_demTableAdapter = null;
+            this.tableAdapterManager.houseTableAdapter = null;
+            this.tableAdapterManager.land_demTableAdapter = null;
+            this.tableAdapterManager.landTableAdapter = null;
+            this.tableAdapterManager.objectTableAdapter = null;
+            this.tableAdapterManager.objecttypeTableAdapter = null;
+            this.tableAdapterManager.supplyTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // house_demTableAdapter
+            // 
+            this.house_demTableAdapter.ClearBeforeFill = true;
+            // 
+            // land_demTableAdapter
+            // 
+            this.land_demTableAdapter.ClearBeforeFill = true;
+            // 
+            // apartment_demTableAdapter
+            // 
+            this.apartment_demTableAdapter.ClearBeforeFill = true;
+            // 
+            // clientBindingSource
+            // 
+            this.clientBindingSource.DataMember = "client";
+            this.clientBindingSource.DataSource = this.realestateofficeDataSet;
+            // 
+            // clientTableAdapter
+            // 
+            this.clientTableAdapter.ClearBeforeFill = true;
+            // 
+            // agentBindingSource
+            // 
+            this.agentBindingSource.DataMember = "agent";
+            this.agentBindingSource.DataSource = this.realestateofficeDataSet;
+            // 
+            // agentTableAdapter
+            // 
+            this.agentTableAdapter.ClearBeforeFill = true;
+            // 
+            // objecttypeBindingSource
+            // 
+            this.objecttypeBindingSource.DataMember = "objecttype";
+            this.objecttypeBindingSource.DataSource = this.realestateofficeDataSet;
+            // 
+            // objecttypeTableAdapter
+            // 
+            this.objecttypeTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "demand_id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "demand_id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "client_id";
+            this.dataGridViewTextBoxColumn2.DataSource = this.clientBindingSource;
+            this.dataGridViewTextBoxColumn2.DisplayMember = "fio";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Клиент";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn2.ValueMember = "client_id";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "agent_id";
+            this.dataGridViewTextBoxColumn3.DataSource = this.agentBindingSource;
+            this.dataGridViewTextBoxColumn3.DisplayMember = "fio";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Агент";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn3.ValueMember = "agent_id";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "address_id";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Адрес";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "type_id";
+            this.dataGridViewTextBoxColumn5.DataSource = this.objecttypeBindingSource;
+            this.dataGridViewTextBoxColumn5.DisplayMember = "typename";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Тип";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn5.ValueMember = "type_id";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "min_price";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Мин. цена";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "max_price";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Макс. цена";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
             // Demands
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 462);
+            this.ClientSize = new System.Drawing.Size(511, 639);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Demands";
             this.Text = "Потребности";
@@ -635,14 +589,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.demandDataGridView)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.house_demBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.house_demDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.land_demBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.house_demBindingSource)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.land_demDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartment_demBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.land_demBindingSource)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.apartment_demDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartment_demBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objecttypeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -656,27 +613,10 @@
         private realestateofficeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator demandBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton demandBindingNavigatorSaveItem;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripTextBox searchTB;
         private System.Windows.Forms.DataGridView demandDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.ToolStripButton resetB;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -708,5 +648,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.BindingSource clientBindingSource;
+        private realestateofficeDataSetTableAdapters.clientTableAdapter clientTableAdapter;
+        private System.Windows.Forms.BindingSource agentBindingSource;
+        private realestateofficeDataSetTableAdapters.agentTableAdapter agentTableAdapter;
+        private System.Windows.Forms.BindingSource objecttypeBindingSource;
+        private realestateofficeDataSetTableAdapters.objecttypeTableAdapter objecttypeTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
     }
 }

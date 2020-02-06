@@ -40,50 +40,60 @@ namespace RealStateOffice
             panelsLabels.Add(demandL, demandPanel);
             panelsLabels.Add(dealL, dealPanel);
         }
-
+        //открытие форм редактирования
         private void openForm_Click(object sender, EventArgs e)
         {
             formsButtons[(Button)sender].ShowDialog();
         }
-
+        //подавление клиента
         private void addClientB_Click(object sender, EventArgs e)
         {
-            if (fioClientTB.Text != "" && (phoneClientTB.Text != "" || emailClientB.Text != ""))
+            if (fioClientTB.Text != "")
             {
-                client client = new client();
-                client.fio = fioClientTB.Text;
-                client.phone = phoneClientTB.Text;
-                client.email = emailClientB.Text;
-                if (phoneClientTB.Text != "" && emailClientB.Text != "")
+                try
                 {
-                    db.client.Add(client);
-                    db.SaveChanges();
+                    client client = new client();
+                    client.client_id = db.client.ToList()[db.client.ToList().Count - 1].client_id + 1;
+                    client.fio = fioClientTB.Text;
+                    client.phone = phoneClientTB.Text;
+                    client.email = emailClientB.Text;
+                    if (phoneClientTB.Text != "" || emailClientB.Text != "")
+                    {
+                        db.client.Add(client);
+                        db.SaveChanges();
+                    }
+                    else MessageBox.Show("Должно быть заполнено хотя бы одно из полей: Телефон или Электронная почта!");
                 }
-                else MessageBox.Show("Должно быть заполнено хотя бы одно из полей: Телефон или Электронная почта!");
+                catch (Exception ex) { MessageBox.Show(ex.InnerException.Message); }
             }
             else MessageBox.Show("Есть незаполненные поля!");
         }
-
+        //переход между панелями
         private void label_Click(object sender, EventArgs e)
         {
             foreach (Panel panel in panelsLabels.Values)
                 if (panel != panelsLabels[(Label)sender]) panel.Visible = false;
                 else panel.Visible = true;
         }
-
+        //добавление риэлтора
         private void addAgentB_Click(object sender, EventArgs e)
         {
             if (fioAgentTB.Text != "")
             {
-                agent agent = new agent();
-                agent.fio = fioAgentTB.Text;
-                agent.dealshare = (int)shareAgentNUD.Value;
-                db.agent.Add(agent);
-                db.SaveChanges();
+                try
+                {
+                    agent agent = new agent();
+                    agent.agent_id = db.agent.ToList()[db.agent.ToList().Count - 1].agent_id + 1;
+                    agent.fio = fioAgentTB.Text;
+                    agent.dealshare = (int)shareAgentNUD.Value;
+                    db.agent.Add(agent);
+                    db.SaveChanges();
+                }
+                catch(Exception ex) { MessageBox.Show(ex.InnerException.Message); }
             }
             else MessageBox.Show("Введите ФИО!");
         }
-
+        //заполнение комбобоксов
         private void GetAddress()
         {
             temp = new List<Obj>();
@@ -133,41 +143,51 @@ namespace RealStateOffice
             // TODO: данная строка кода позволяет загрузить данные в таблицу "realestateofficeDataSet.objecttype". При необходимости она может быть перемещена или удалена.
             this.objecttypeTableAdapter.Fill(this.realestateofficeDataSet.objecttype);
         }
-
+        //создание объекта
         private void addObjectB_Click(object sender, EventArgs e)
         {
             if (typeObjectCB.Text != "")
             {
                 if (latitudeObjectTB.Text != "" && longitudeObjectTB.Text != "")
                 {
-                    house house = new house();
-                    land land = new land();
-                    apartment apartment = new apartment();
-                    _object obj = new _object();
-                    obj.address_id = (int)addressObjectСB.SelectedValue;
-                    obj.latitude = float.Parse(latitudeObjectTB.Text.Replace(".", ","));
-                    obj.longitude = float.Parse(longitudeObjectTB.Text.Replace(".", ","));
-                    db._object.Add(obj);
-                    switch (typeObjectCB.SelectedValue)
-                    {
-                        case 1 : house.area = float.Parse(areaObjectTB.Text);
-                                   house.floor_count = short.Parse(floorsObjectNUD.Value.ToString());
-                                   house.room_count = short.Parse(roomCountObjectNUD.Value.ToString());
-                                   db.house.Add(house); break;
-                        case 2 : land.area = float.Parse(areaObjectTB.Text);
-                                   db.land.Add(land); break;
-                        case 3 : apartment.area = float.Parse(areaObjectTB.Text);
-                                   apartment.floor_number = short.Parse(floorObjectNUD.Value.ToString());
-                                   apartment.room_count = short.Parse(roomCountObjectNUD.Value.ToString());
-                                   db.apartment.Add(apartment); break;
+                    try 
+                    { 
+                        house house = new house();
+                        land land = new land();
+                        apartment apartment = new apartment();
+                        _object obj = new _object();
+                        obj.object_id = db._object.ToList()[db._object.ToList().Count - 1].object_id + 1;
+                        obj.address_id = (int)addressObjectСB.SelectedValue;
+                        obj.latitude = float.Parse(latitudeObjectTB.Text.Replace(".", ","));
+                        obj.longitude = float.Parse(longitudeObjectTB.Text.Replace(".", ","));
+                        db._object.Add(obj);
+                        switch (typeObjectCB.SelectedValue)
+                        {
+                            case 1 :    house.object_id = obj.object_id;
+                                        house.area = float.Parse(areaObjectTB.Text);
+                                       house.floor_count = short.Parse(floorsObjectNUD.Value.ToString());
+                                       house.room_count = short.Parse(roomCountObjectNUD.Value.ToString());
+                                       db.house.Add(house); break;
+                            case 2 :
+                                        land.object_id = obj.object_id;
+                                        land.area = float.Parse(areaObjectTB.Text);
+                                       db.land.Add(land); break;
+                            case 3 :
+                                        apartment.object_id = obj.object_id;
+                                        apartment.area = float.Parse(areaObjectTB.Text);
+                                       apartment.floor_number = short.Parse(floorObjectNUD.Value.ToString());
+                                       apartment.room_count = short.Parse(roomCountObjectNUD.Value.ToString());
+                                       db.apartment.Add(apartment); break;
+                        }
+                        db.SaveChanges();
                     }
-                    db.SaveChanges();
-                }
+                    catch (Exception ex) { MessageBox.Show(ex.InnerException.Message); }
+            }
                 else MessageBox.Show("Введите координаты!");
             }
             else MessageBox.Show("Выберите тип объекта!");
         }
-
+        //создание потребности
         private void addDemandB_Click(object sender, EventArgs e)
         {
             if (typeDemandCB.Text != "")
@@ -176,31 +196,37 @@ namespace RealStateOffice
                 land_dem land = new land_dem();
                 apartment_dem apartment = new apartment_dem();
                 house_dem house = new house_dem();
+                dem.demand_id = db.demand.ToList()[db.demand.ToList().Count - 1].demand_id + 1;
                 dem.client_id = (int)clientDemandCB.SelectedValue;
                 dem.agent_id = (int)agentDemandCB.SelectedValue;
                 dem.address_id = (int)addressDemandCB.SelectedValue;
                 dem.type_id = (int)typeDemandCB.SelectedValue;
+                dem.min_price = (int)minPriceDemandNUD.Value;
+                dem.max_price = (int)maxPriceDemandNUD.Value;
                 db.demand.Add(dem);
                 switch (typeObjectCB.SelectedValue)
                 {
                     case 1:
+                        house.demand_id = dem.demand_id;
                         house.max_area = int.Parse(maxAreaDemTB.Text);
                         house.min_area = int.Parse(minAreaDemTB.Text);
+                        house.min_floors = (int)minFloorsDemNUD.Value;
                         house.max_floors = (int)maxFloorsDemNUD.Value;
-                        house.max_floors = (int)maxFloorsDemNUD.Value;
-                        house.max_rooms = (int)maxRoomDemNUD.Value;
+                        house.min_rooms = (int)minRoomDemNUD.Value;
                         house.max_rooms = (int)maxRoomDemNUD.Value;
                         db.house_dem.Add(house); break;
                     case 2:
+                        land.demand_id = dem.demand_id;
                         land.max_area = int.Parse(maxAreaDemTB.Text);
                         land.min_area = int.Parse(minAreaDemTB.Text);
                         db.land_dem.Add(land); break;
                     case 3:
+                        apartment.demand_id = dem.demand_id;
                         apartment.max_area = int.Parse(maxAreaDemTB.Text);
                         apartment.min_area = int.Parse(minAreaDemTB.Text);
+                        apartment.min_floor = (int)minFloorDemNUD.Value;
                         apartment.max_floor = (int)maxFloorDemNUD.Value;
-                        apartment.max_floor = (int)maxFloorDemNUD.Value;
-                        apartment.max_rooms = (int)maxRoomDemNUD.Value;
+                        apartment.min_rooms = (int)minRoomDemNUD.Value;
                         apartment.max_rooms = (int)maxRoomDemNUD.Value;
                         db.apartment_dem.Add(apartment); break;
                 }
@@ -208,30 +234,34 @@ namespace RealStateOffice
             }
             else MessageBox.Show("Выберите тип объекта!");
         }
-
+        //открытие формы адреса
         private void addressL_Click(object sender, EventArgs e)
         {
             new Forms.Addresses().ShowDialog();
         }
-
+        //создание предложения
         private void addSupplyB_Click(object sender, EventArgs e)
         {
             supply sup = new supply();
+            sup.supply_id = db.supply.ToList()[db.supply.ToList().Count-1].supply_id + 1;
             sup.client_id = (int)clientSupplyCB.SelectedValue;
             sup.agent_id = (int)agentSupplyCB.SelectedValue;
             sup.object_id = (int)objectSupplyCB.SelectedValue;
             sup.price = (int)priceSupplyNUD.Value;
             db.supply.Add(sup);
+            db.SaveChanges();
         }
-
+        //создание сделки
         private void addDealB_Click(object sender, EventArgs e)
         {
             deal deal = new deal();
+            deal.deal_id = db.deal.ToList()[db.deal.ToList().Count - 1].deal_id + 1;
             deal.supply_id = (int)supplyDealCB.SelectedValue;
             deal.demand_id = (int)demandDealCB.SelectedValue;
             db.deal.Add(deal);
+            db.SaveChanges();
         }
-
+        //отображение нужных полей
         private void typeDemandCB_SelectedValueChanged(object sender, EventArgs e)
         {
             switch (typeDemandCB.SelectedValue)
@@ -264,7 +294,7 @@ namespace RealStateOffice
                         maxRoomDemNUD.Enabled = true; break;
             }
         }
-
+        //отображение нужных полей
         private void typeObjectCB_SelectedValueChanged(object sender, EventArgs e)
         {
             switch (typeObjectCB.SelectedValue) 
@@ -285,11 +315,13 @@ namespace RealStateOffice
                         areaObjectTB.Enabled = true; break;
             }
         }
-
+        //расчёт прибыли
         private void dealCB_ValueChange(object sender, EventArgs e)
         {
+            int b = 0;
             //сделать проверку на число
-            if (supplyDealCB.SelectedValue == null || demandDealCB.SelectedValue == null)
+            if (!Int32.TryParse(supplyDealCB.SelectedValue.ToString(), out b) ||
+                !Int32.TryParse(demandDealCB.SelectedValue.ToString(), out b))
                 return;
             double clientSellerSum = 0, clientBuyerSum = 0, agentSellerSum = 0,
                 agentBuyerSum = 0;
@@ -300,6 +332,7 @@ namespace RealStateOffice
             int price = (int)(from s in db.supply
                               where s.supply_id == supplyID
                               select s.price).First();
+
             int typeID = (int)(from o in db._object
                                where o.object_id == (int)(from s in db.supply
                                                           where s.supply_id == supplyID
