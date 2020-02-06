@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Npgsql;
 using System.Windows.Forms;
 
 namespace RealStateOffice
@@ -41,6 +36,7 @@ namespace RealStateOffice
             panelsLabels.Add(dealL, dealPanel);
         }
         //открытие форм редактирования
+        //оптимизация: один обработчик события для нескольких элементов
         private void openForm_Click(object sender, EventArgs e)
         {
             formsButtons[(Button)sender].ShowDialog();

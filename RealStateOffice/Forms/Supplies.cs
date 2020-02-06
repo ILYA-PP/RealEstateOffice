@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RealStateOffice
@@ -18,6 +14,7 @@ namespace RealStateOffice
             InitializeComponent();
             GetObject();
         }
+        //фильтрация по клиентам и агентам
         public Supplies(int id, bool client)
         {
             InitializeComponent();
@@ -27,14 +24,14 @@ namespace RealStateOffice
                 supplyBindingSource.Filter = $"[agent_id] = {id}";
             GetObject();
         }
-
+        //сохранение изменений таблицы
         private void supplyBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.supplyBindingSource.EndEdit();
-            //this.tableAdapterManager.UpdateAll(this.realestateofficeDataSet);
+            this.tableAdapterManager.UpdateAll(this.realestateofficeDataSet);
         }
-
+        //заполнение таблиц
         private void Supplies_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "realestateofficeDataSet.agent". При необходимости она может быть перемещена или удалена.
@@ -46,6 +43,7 @@ namespace RealStateOffice
             // TODO: данная строка кода позволяет загрузить данные в таблицу "realestateofficeDataSet.supply". При необходимости она может быть перемещена или удалена.
             this.supplyTableAdapter.Fill(this.realestateofficeDataSet.supply);
         }
+        //заполнение комбобокса
         private void GetObject()
         {
             using (RealEstateEDM db = new RealEstateEDM())
@@ -58,7 +56,7 @@ namespace RealStateOffice
                 ((DataGridViewComboBoxColumn)supplyDataGridView.Columns[3]).DisplayMember = "Name";
             }
         }
-
+        //проверка на удаление
         private void supplyDataGridView_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
         {
             using (RealEstateEDM db = new RealEstateEDM())

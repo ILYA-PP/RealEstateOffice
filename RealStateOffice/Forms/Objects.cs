@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RealStateOffice
@@ -16,14 +11,14 @@ namespace RealStateOffice
         {
             InitializeComponent();
         }
-
+        //сохранение изменений в таблице
         private void objectBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.objectBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.realestateofficeDataSet);
         }
-
+        //заполнение таблиц
         private void Objects_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "realestateofficeDataSet.apartment". При необходимости она может быть перемещена или удалена.
@@ -57,23 +52,23 @@ namespace RealStateOffice
                 }
             }
         }
-
+        //отмена поиска
         private void resetB_Click(object sender, EventArgs e)
         {
             Search.Reset(objectDataGridView);
             searchTB.Text = "";
         }
-
+        //поиск
         private void searchTB_TextChanged(object sender, EventArgs e)
         {
             Search.GetResult(objectDataGridView, new int[1] { 5 }, searchTB.Text);
         }
-
+        //фильтрация
         private void typeCB_SelectedIndexChanged(object sender, EventArgs e)
         {
             Search.Filter(objectDataGridView, 6, typeCB.Text);
         }
-
+        //отображение дополнений к объекту
         private void objectDataGridView_SelectionChanged(object sender, EventArgs e)
         {
             if (((DataGridView)sender).SelectedRows.Count == 0)

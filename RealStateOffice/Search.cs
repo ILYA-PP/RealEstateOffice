@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace RealStateOffice
 {
+    //оптимизация: повторяющиеся действия вынесены в отдельный класс
     class Search
     {
         public static void GetResult(DataGridView d, int[] c, string s)
