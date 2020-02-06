@@ -56,5 +56,21 @@ namespace RealStateOffice
                 MessageBox.Show("Нельзя удалить клиента, связанного с потребностью или предложением!");
             }
         }
+
+        private void demandAgentB_Click(object sender, EventArgs e)
+        {
+            if (clientDataGridView.SelectedRows.Count == 0)
+                return;
+            int id = (int)clientDataGridView.SelectedRows[0].Cells[0].Value;
+            new Demands(id, true).ShowDialog();
+        }
+
+        private void supplyAgentB_Click(object sender, EventArgs e)
+        {
+            if (clientDataGridView.SelectedRows.Count == 0)
+                return;
+            int id = (int)clientDataGridView.SelectedRows[0].Cells[0].Value;
+            new Supplies(id, true).ShowDialog();
+        }
     }
 }

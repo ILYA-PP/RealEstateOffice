@@ -31,37 +31,27 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Addresses));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.realestateofficeDataSet = new RealStateOffice.realestateofficeDataSet();
-            this.addressBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addressTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.addressTableAdapter();
-            this.tableAdapterManager = new RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager();
             this.addressBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.addressDataGridView = new System.Windows.Forms.DataGridView();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.addressBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.realestateofficeDataSet = new RealStateOffice.realestateofficeDataSet();
             this.addressBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.resetB = new System.Windows.Forms.ToolStripButton();
+            this.addressDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.resetB = new System.Windows.Forms.ToolStripButton();
+            this.addressTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.addressTableAdapter();
+            this.tableAdapterManager = new RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.addressBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addressBindingNavigator)).BeginInit();
             this.addressBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.addressBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addressDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,104 +70,79 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(511, 361);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // realestateofficeDataSet
+            // addressBindingNavigator
             // 
-            this.realestateofficeDataSet.DataSetName = "realestateofficeDataSet";
-            this.realestateofficeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.addressBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.addressBindingNavigator.BindingSource = this.addressBindingSource;
+            this.addressBindingNavigator.CountItem = null;
+            this.addressBindingNavigator.DeleteItem = null;
+            this.addressBindingNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addressBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorAddNewItem,
+            this.addressBindingNavigatorSaveItem,
+            this.toolStripLabel1,
+            this.toolStripTextBox1,
+            this.resetB});
+            this.addressBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.addressBindingNavigator.MoveFirstItem = null;
+            this.addressBindingNavigator.MoveLastItem = null;
+            this.addressBindingNavigator.MoveNextItem = null;
+            this.addressBindingNavigator.MovePreviousItem = null;
+            this.addressBindingNavigator.Name = "addressBindingNavigator";
+            this.addressBindingNavigator.PositionItem = null;
+            this.addressBindingNavigator.Size = new System.Drawing.Size(511, 36);
+            this.addressBindingNavigator.TabIndex = 1;
+            this.addressBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 33);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // addressBindingSource
             // 
             this.addressBindingSource.DataMember = "address";
             this.addressBindingSource.DataSource = this.realestateofficeDataSet;
             // 
-            // addressTableAdapter
+            // realestateofficeDataSet
             // 
-            this.addressTableAdapter.ClearBeforeFill = true;
+            this.realestateofficeDataSet.DataSetName = "realestateofficeDataSet";
+            this.realestateofficeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tableAdapterManager
+            // addressBindingNavigatorSaveItem
             // 
-            this.tableAdapterManager.addressTableAdapter = this.addressTableAdapter;
-            this.tableAdapterManager.agentTableAdapter = null;
-            this.tableAdapterManager.apartment_demTableAdapter = null;
-            this.tableAdapterManager.apartmentTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.clientTableAdapter = null;
-            this.tableAdapterManager.dealTableAdapter = null;
-            this.tableAdapterManager.demandTableAdapter = null;
-            this.tableAdapterManager.house_demTableAdapter = null;
-            this.tableAdapterManager.houseTableAdapter = null;
-            this.tableAdapterManager.land_demTableAdapter = null;
-            this.tableAdapterManager.landTableAdapter = null;
-            this.tableAdapterManager.objectTableAdapter = null;
-            this.tableAdapterManager.objecttypeTableAdapter = null;
-            this.tableAdapterManager.supplyTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.addressBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.addressBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("addressBindingNavigatorSaveItem.Image")));
+            this.addressBindingNavigatorSaveItem.Name = "addressBindingNavigatorSaveItem";
+            this.addressBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 33);
+            this.addressBindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.addressBindingNavigatorSaveItem.Click += new System.EventHandler(this.addressBindingNavigatorSaveItem_Click);
             // 
-            // addressBindingNavigator
+            // toolStripLabel1
             // 
-            this.addressBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.addressBindingNavigator.BindingSource = this.addressBindingSource;
-            this.addressBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.addressBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.addressBindingNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addressBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.addressBindingNavigatorSaveItem,
-            this.toolStripLabel1,
-            this.toolStripTextBox1,
-            this.resetB});
-            this.addressBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.addressBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.addressBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.addressBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.addressBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.addressBindingNavigator.Name = "addressBindingNavigator";
-            this.addressBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.addressBindingNavigator.Size = new System.Drawing.Size(511, 36);
-            this.addressBindingNavigator.TabIndex = 1;
-            this.addressBindingNavigator.Text = "bindingNavigator1";
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(42, 33);
+            this.toolStripLabel1.Text = "Поиск";
             // 
-            // bindingNavigatorSeparator
+            // toolStripTextBox1
             // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 36);
+            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(140, 36);
             // 
-            // bindingNavigatorPositionItem
+            // resetB
             // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(40, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 33);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 36);
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 36);
+            this.resetB.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.resetB.Image = global::RealStateOffice.Properties.Resources.reset_6618;
+            this.resetB.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.resetB.Name = "resetB";
+            this.resetB.Size = new System.Drawing.Size(23, 33);
+            this.resetB.Text = "toolStripButton1";
             // 
             // addressDataGridView
             // 
@@ -196,69 +161,6 @@
             this.addressDataGridView.Name = "addressDataGridView";
             this.addressDataGridView.Size = new System.Drawing.Size(505, 319);
             this.addressDataGridView.TabIndex = 0;
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 33);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 33);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 33);
-            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 33);
-            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 33);
-            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 33);
-            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
-            // 
-            // addressBindingNavigatorSaveItem
-            // 
-            this.addressBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.addressBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("addressBindingNavigatorSaveItem.Image")));
-            this.addressBindingNavigatorSaveItem.Name = "addressBindingNavigatorSaveItem";
-            this.addressBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 33);
-            this.addressBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.addressBindingNavigatorSaveItem.Click += new System.EventHandler(this.addressBindingNavigatorSaveItem_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -291,27 +193,28 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "Номер квартиры";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
-            // toolStripLabel1
+            // addressTableAdapter
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(42, 33);
-            this.toolStripLabel1.Text = "Поиск";
+            this.addressTableAdapter.ClearBeforeFill = true;
             // 
-            // toolStripTextBox1
+            // tableAdapterManager
             // 
-            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(140, 36);
-            // 
-            // resetB
-            // 
-            this.resetB.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.resetB.Image = global::RealStateOffice.Properties.Resources.reset_6618;
-            this.resetB.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.resetB.Name = "resetB";
-            this.resetB.Size = new System.Drawing.Size(23, 33);
-            this.resetB.Text = "toolStripButton1";
+            this.tableAdapterManager.addressTableAdapter = this.addressTableAdapter;
+            this.tableAdapterManager.agentTableAdapter = null;
+            this.tableAdapterManager.apartment_demTableAdapter = null;
+            this.tableAdapterManager.apartmentTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.clientTableAdapter = null;
+            this.tableAdapterManager.dealTableAdapter = null;
+            this.tableAdapterManager.demandTableAdapter = null;
+            this.tableAdapterManager.house_demTableAdapter = null;
+            this.tableAdapterManager.houseTableAdapter = null;
+            this.tableAdapterManager.land_demTableAdapter = null;
+            this.tableAdapterManager.landTableAdapter = null;
+            this.tableAdapterManager.objectTableAdapter = null;
+            this.tableAdapterManager.objecttypeTableAdapter = null;
+            this.tableAdapterManager.supplyTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Addresses
             // 
@@ -324,11 +227,11 @@
             this.Load += new System.EventHandler(this.Addresses_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.addressBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addressBindingNavigator)).EndInit();
             this.addressBindingNavigator.ResumeLayout(false);
             this.addressBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.addressBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addressDataGridView)).EndInit();
             this.ResumeLayout(false);
 
@@ -343,16 +246,6 @@
         private realestateofficeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator addressBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton addressBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView addressDataGridView;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;

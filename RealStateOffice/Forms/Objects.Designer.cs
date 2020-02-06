@@ -63,7 +63,6 @@
             this.objectBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.objectBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.objectBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.typeCB = new System.Windows.Forms.ToolStripComboBox();
@@ -367,11 +366,10 @@
             this.objectBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.objectBindingNavigator.BindingSource = this.objectBindingSource;
             this.objectBindingNavigator.CountItem = null;
-            this.objectBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.objectBindingNavigator.DeleteItem = null;
             this.objectBindingNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
             this.objectBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
             this.objectBindingNavigatorSaveItem,
             this.toolStripLabel1,
             this.typeCB,
@@ -396,15 +394,6 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 33);
             this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 33);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // objectBindingNavigatorSaveItem
             // 
@@ -521,7 +510,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.BindingNavigator objectBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton objectBindingNavigatorSaveItem;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripTextBox searchTB;

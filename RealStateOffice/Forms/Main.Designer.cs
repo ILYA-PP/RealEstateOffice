@@ -37,6 +37,61 @@
             this.objectL = new System.Windows.Forms.Label();
             this.agentL = new System.Windows.Forms.Label();
             this.clientL = new System.Windows.Forms.Label();
+            this.supplyPanel = new System.Windows.Forms.Panel();
+            this.objectSupplyCB = new System.Windows.Forms.ComboBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.agentSupplyCB = new System.Windows.Forms.ComboBox();
+            this.agentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.realestateofficeDataSet = new RealStateOffice.realestateofficeDataSet();
+            this.label23 = new System.Windows.Forms.Label();
+            this.priceSupplyNUD = new System.Windows.Forms.NumericUpDown();
+            this.label21 = new System.Windows.Forms.Label();
+            this.clientSupplyCB = new System.Windows.Forms.ComboBox();
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label22 = new System.Windows.Forms.Label();
+            this.editSupplyB = new System.Windows.Forms.Button();
+            this.addSupplyB = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.objectPanel = new System.Windows.Forms.Panel();
+            this.areaObjectTB = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.roomCountObjectNUD = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
+            this.floorsObjectNUD = new System.Windows.Forms.NumericUpDown();
+            this.label15 = new System.Windows.Forms.Label();
+            this.floorObjectNUD = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.addressObjectСB = new System.Windows.Forms.ComboBox();
+            this.typeObjectCB = new System.Windows.Forms.ComboBox();
+            this.objecttypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label13 = new System.Windows.Forms.Label();
+            this.editObjectB = new System.Windows.Forms.Button();
+            this.addObjectB = new System.Windows.Forms.Button();
+            this.longitudeObjectTB = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.latitudeObjectTB = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.agentPanel = new System.Windows.Forms.Panel();
+            this.shareAgentNUD = new System.Windows.Forms.NumericUpDown();
+            this.editAgentB = new System.Windows.Forms.Button();
+            this.addAgentB = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.fioAgentTB = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.clientPanel = new System.Windows.Forms.Panel();
+            this.editClientB = new System.Windows.Forms.Button();
+            this.addClientB = new System.Windows.Forms.Button();
+            this.emailClientB = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.phoneClientTB = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.fioClientTB = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.dealPanel = new System.Windows.Forms.Panel();
             this.supplyDealCB = new System.Windows.Forms.ComboBox();
             this.companyProfitL = new System.Windows.Forms.Label();
@@ -70,73 +125,18 @@
             this.maxPriceDemandNUD = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
             this.typeDemandCB = new System.Windows.Forms.ComboBox();
-            this.objecttypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.realestateofficeDataSet = new RealStateOffice.realestateofficeDataSet();
             this.label28 = new System.Windows.Forms.Label();
             this.addressDemandCB = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.agentDemandCB = new System.Windows.Forms.ComboBox();
-            this.agentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label19 = new System.Windows.Forms.Label();
             this.minPriceDemandNUD = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
             this.clientDemandCB = new System.Windows.Forms.ComboBox();
-            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label25 = new System.Windows.Forms.Label();
             this.editDemandB = new System.Windows.Forms.Button();
             this.addDemandB = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
-            this.supplyPanel = new System.Windows.Forms.Panel();
-            this.objectSupplyCB = new System.Windows.Forms.ComboBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.agentSupplyCB = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.priceSupplyNUD = new System.Windows.Forms.NumericUpDown();
-            this.label21 = new System.Windows.Forms.Label();
-            this.clientSupplyCB = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.editSupplyB = new System.Windows.Forms.Button();
-            this.addSupplyB = new System.Windows.Forms.Button();
-            this.label26 = new System.Windows.Forms.Label();
-            this.objectPanel = new System.Windows.Forms.Panel();
-            this.areaObjectTB = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.roomCountObjectNUD = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.floorsObjectNUD = new System.Windows.Forms.NumericUpDown();
-            this.label15 = new System.Windows.Forms.Label();
-            this.floorObjectNUD = new System.Windows.Forms.NumericUpDown();
-            this.label14 = new System.Windows.Forms.Label();
-            this.addressObjectСB = new System.Windows.Forms.ComboBox();
-            this.typeObjectCB = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.editObjectB = new System.Windows.Forms.Button();
-            this.addObjectB = new System.Windows.Forms.Button();
-            this.longitudeObjectTB = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.latitudeObjectTB = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.agentPanel = new System.Windows.Forms.Panel();
-            this.shareAgentNUD = new System.Windows.Forms.NumericUpDown();
-            this.editAgentB = new System.Windows.Forms.Button();
-            this.addAgentB = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.fioAgentTB = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.clientPanel = new System.Windows.Forms.Panel();
-            this.editClientB = new System.Windows.Forms.Button();
-            this.addClientB = new System.Windows.Forms.Button();
-            this.emailClientB = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.phoneClientTB = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.fioClientTB = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.objecttypeTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.objecttypeTableAdapter();
             this.tableAdapterManager = new RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager();
             this.clientTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.clientTableAdapter();
@@ -145,6 +145,19 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            this.supplyPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.priceSupplyNUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
+            this.objectPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomCountObjectNUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.floorsObjectNUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.floorObjectNUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objecttypeBindingSource)).BeginInit();
+            this.agentPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.shareAgentNUD)).BeginInit();
+            this.clientPanel.SuspendLayout();
             this.dealPanel.SuspendLayout();
             this.demandPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maxRoomDemNUD)).BeginInit();
@@ -154,20 +167,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.maxFloorDemNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minFloorDemNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxPriceDemandNUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objecttypeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minPriceDemandNUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
-            this.supplyPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.priceSupplyNUD)).BeginInit();
-            this.objectPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomCountObjectNUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.floorsObjectNUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.floorObjectNUD)).BeginInit();
-            this.agentPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.shareAgentNUD)).BeginInit();
-            this.clientPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer2
@@ -189,12 +189,12 @@
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.supplyPanel);
-            this.splitContainer2.Panel2.Controls.Add(this.objectPanel);
             this.splitContainer2.Panel2.Controls.Add(this.agentPanel);
             this.splitContainer2.Panel2.Controls.Add(this.clientPanel);
             this.splitContainer2.Panel2.Controls.Add(this.dealPanel);
             this.splitContainer2.Panel2.Controls.Add(this.demandPanel);
+            this.splitContainer2.Panel2.Controls.Add(this.supplyPanel);
+            this.splitContainer2.Panel2.Controls.Add(this.objectPanel);
             this.splitContainer2.Size = new System.Drawing.Size(574, 375);
             this.splitContainer2.SplitterDistance = 154;
             this.splitContainer2.SplitterWidth = 1;
@@ -276,6 +276,574 @@
             this.clientL.TabIndex = 0;
             this.clientL.Text = "Клиенты";
             this.clientL.Click += new System.EventHandler(this.label_Click);
+            // 
+            // supplyPanel
+            // 
+            this.supplyPanel.AutoScroll = true;
+            this.supplyPanel.Controls.Add(this.objectSupplyCB);
+            this.supplyPanel.Controls.Add(this.label24);
+            this.supplyPanel.Controls.Add(this.agentSupplyCB);
+            this.supplyPanel.Controls.Add(this.label23);
+            this.supplyPanel.Controls.Add(this.priceSupplyNUD);
+            this.supplyPanel.Controls.Add(this.label21);
+            this.supplyPanel.Controls.Add(this.clientSupplyCB);
+            this.supplyPanel.Controls.Add(this.label22);
+            this.supplyPanel.Controls.Add(this.editSupplyB);
+            this.supplyPanel.Controls.Add(this.addSupplyB);
+            this.supplyPanel.Controls.Add(this.label26);
+            this.supplyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.supplyPanel.Location = new System.Drawing.Point(0, 0);
+            this.supplyPanel.Name = "supplyPanel";
+            this.supplyPanel.Size = new System.Drawing.Size(419, 375);
+            this.supplyPanel.TabIndex = 20;
+            // 
+            // objectSupplyCB
+            // 
+            this.objectSupplyCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.objectSupplyCB.FormattingEnabled = true;
+            this.objectSupplyCB.Location = new System.Drawing.Point(97, 134);
+            this.objectSupplyCB.Name = "objectSupplyCB";
+            this.objectSupplyCB.Size = new System.Drawing.Size(307, 28);
+            this.objectSupplyCB.TabIndex = 24;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label24.Location = new System.Drawing.Point(19, 138);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(61, 18);
+            this.label24.TabIndex = 23;
+            this.label24.Text = "Объект";
+            // 
+            // agentSupplyCB
+            // 
+            this.agentSupplyCB.DataSource = this.agentBindingSource;
+            this.agentSupplyCB.DisplayMember = "fio";
+            this.agentSupplyCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.agentSupplyCB.FormattingEnabled = true;
+            this.agentSupplyCB.Location = new System.Drawing.Point(97, 98);
+            this.agentSupplyCB.Name = "agentSupplyCB";
+            this.agentSupplyCB.Size = new System.Drawing.Size(307, 28);
+            this.agentSupplyCB.TabIndex = 21;
+            this.agentSupplyCB.ValueMember = "agent_id";
+            // 
+            // agentBindingSource
+            // 
+            this.agentBindingSource.DataMember = "agent";
+            this.agentBindingSource.DataSource = this.realestateofficeDataSet;
+            // 
+            // realestateofficeDataSet
+            // 
+            this.realestateofficeDataSet.DataSetName = "realestateofficeDataSet";
+            this.realestateofficeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.Location = new System.Drawing.Point(19, 102);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(67, 18);
+            this.label23.TabIndex = 20;
+            this.label23.Text = "Риэлтор";
+            // 
+            // priceSupplyNUD
+            // 
+            this.priceSupplyNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.priceSupplyNUD.Location = new System.Drawing.Point(97, 170);
+            this.priceSupplyNUD.Maximum = new decimal(new int[] {
+            1874919423,
+            2328306,
+            0,
+            0});
+            this.priceSupplyNUD.Name = "priceSupplyNUD";
+            this.priceSupplyNUD.Size = new System.Drawing.Size(307, 26);
+            this.priceSupplyNUD.TabIndex = 12;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.Location = new System.Drawing.Point(19, 175);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(43, 18);
+            this.label21.TabIndex = 11;
+            this.label21.Text = "Цена";
+            // 
+            // clientSupplyCB
+            // 
+            this.clientSupplyCB.DataSource = this.clientBindingSource;
+            this.clientSupplyCB.DisplayMember = "fio";
+            this.clientSupplyCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clientSupplyCB.FormattingEnabled = true;
+            this.clientSupplyCB.Location = new System.Drawing.Point(97, 62);
+            this.clientSupplyCB.Name = "clientSupplyCB";
+            this.clientSupplyCB.Size = new System.Drawing.Size(307, 28);
+            this.clientSupplyCB.TabIndex = 10;
+            this.clientSupplyCB.ValueMember = "client_id";
+            // 
+            // clientBindingSource
+            // 
+            this.clientBindingSource.DataMember = "client";
+            this.clientBindingSource.DataSource = this.realestateofficeDataSet;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.Location = new System.Drawing.Point(19, 66);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(58, 18);
+            this.label22.TabIndex = 9;
+            this.label22.Text = "Клиент";
+            // 
+            // editSupplyB
+            // 
+            this.editSupplyB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.editSupplyB.Location = new System.Drawing.Point(244, 272);
+            this.editSupplyB.Name = "editSupplyB";
+            this.editSupplyB.Size = new System.Drawing.Size(160, 33);
+            this.editSupplyB.TabIndex = 8;
+            this.editSupplyB.Text = "Редактировать";
+            this.editSupplyB.UseVisualStyleBackColor = true;
+            this.editSupplyB.Click += new System.EventHandler(this.openForm_Click);
+            // 
+            // addSupplyB
+            // 
+            this.addSupplyB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addSupplyB.Location = new System.Drawing.Point(22, 272);
+            this.addSupplyB.Name = "addSupplyB";
+            this.addSupplyB.Size = new System.Drawing.Size(160, 33);
+            this.addSupplyB.TabIndex = 7;
+            this.addSupplyB.Text = "Добавить";
+            this.addSupplyB.UseVisualStyleBackColor = true;
+            this.addSupplyB.Click += new System.EventHandler(this.addSupplyB_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label26.Location = new System.Drawing.Point(127, 21);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(160, 25);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Предложения";
+            // 
+            // objectPanel
+            // 
+            this.objectPanel.AutoScroll = true;
+            this.objectPanel.Controls.Add(this.areaObjectTB);
+            this.objectPanel.Controls.Add(this.label17);
+            this.objectPanel.Controls.Add(this.roomCountObjectNUD);
+            this.objectPanel.Controls.Add(this.label16);
+            this.objectPanel.Controls.Add(this.floorsObjectNUD);
+            this.objectPanel.Controls.Add(this.label15);
+            this.objectPanel.Controls.Add(this.floorObjectNUD);
+            this.objectPanel.Controls.Add(this.label14);
+            this.objectPanel.Controls.Add(this.addressObjectСB);
+            this.objectPanel.Controls.Add(this.typeObjectCB);
+            this.objectPanel.Controls.Add(this.label13);
+            this.objectPanel.Controls.Add(this.editObjectB);
+            this.objectPanel.Controls.Add(this.addObjectB);
+            this.objectPanel.Controls.Add(this.longitudeObjectTB);
+            this.objectPanel.Controls.Add(this.label9);
+            this.objectPanel.Controls.Add(this.latitudeObjectTB);
+            this.objectPanel.Controls.Add(this.label10);
+            this.objectPanel.Controls.Add(this.label11);
+            this.objectPanel.Controls.Add(this.label12);
+            this.objectPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.objectPanel.Location = new System.Drawing.Point(0, 0);
+            this.objectPanel.Name = "objectPanel";
+            this.objectPanel.Size = new System.Drawing.Size(419, 375);
+            this.objectPanel.TabIndex = 10;
+            // 
+            // areaObjectTB
+            // 
+            this.areaObjectTB.Enabled = false;
+            this.areaObjectTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.areaObjectTB.Location = new System.Drawing.Point(272, 231);
+            this.areaObjectTB.Name = "areaObjectTB";
+            this.areaObjectTB.Size = new System.Drawing.Size(116, 24);
+            this.areaObjectTB.TabIndex = 18;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Location = new System.Drawing.Point(181, 233);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 18);
+            this.label17.TabIndex = 17;
+            this.label17.Text = "Площадь";
+            // 
+            // roomCountObjectNUD
+            // 
+            this.roomCountObjectNUD.Enabled = false;
+            this.roomCountObjectNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.roomCountObjectNUD.Location = new System.Drawing.Point(333, 196);
+            this.roomCountObjectNUD.Name = "roomCountObjectNUD";
+            this.roomCountObjectNUD.Size = new System.Drawing.Size(55, 26);
+            this.roomCountObjectNUD.TabIndex = 16;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.Location = new System.Drawing.Point(180, 199);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(147, 18);
+            this.label16.TabIndex = 15;
+            this.label16.Text = "Количество комнат";
+            // 
+            // floorsObjectNUD
+            // 
+            this.floorsObjectNUD.Enabled = false;
+            this.floorsObjectNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.floorsObjectNUD.Location = new System.Drawing.Point(110, 232);
+            this.floorsObjectNUD.Name = "floorsObjectNUD";
+            this.floorsObjectNUD.Size = new System.Drawing.Size(55, 26);
+            this.floorsObjectNUD.TabIndex = 14;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(19, 234);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(85, 18);
+            this.label15.TabIndex = 13;
+            this.label15.Text = "Этажность";
+            // 
+            // floorObjectNUD
+            // 
+            this.floorObjectNUD.Enabled = false;
+            this.floorObjectNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.floorObjectNUD.Location = new System.Drawing.Point(110, 194);
+            this.floorObjectNUD.Name = "floorObjectNUD";
+            this.floorObjectNUD.Size = new System.Drawing.Size(55, 26);
+            this.floorObjectNUD.TabIndex = 12;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(19, 199);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(45, 18);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Этаж";
+            // 
+            // addressObjectСB
+            // 
+            this.addressObjectСB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addressObjectСB.FormattingEnabled = true;
+            this.addressObjectСB.Location = new System.Drawing.Point(97, 96);
+            this.addressObjectСB.Name = "addressObjectСB";
+            this.addressObjectСB.Size = new System.Drawing.Size(291, 28);
+            this.addressObjectСB.TabIndex = 10;
+            // 
+            // typeObjectCB
+            // 
+            this.typeObjectCB.DataSource = this.objecttypeBindingSource;
+            this.typeObjectCB.DisplayMember = "typename";
+            this.typeObjectCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.typeObjectCB.FormattingEnabled = true;
+            this.typeObjectCB.Location = new System.Drawing.Point(97, 62);
+            this.typeObjectCB.Name = "typeObjectCB";
+            this.typeObjectCB.Size = new System.Drawing.Size(291, 28);
+            this.typeObjectCB.TabIndex = 10;
+            this.typeObjectCB.ValueMember = "type_id";
+            this.typeObjectCB.SelectedValueChanged += new System.EventHandler(this.typeObjectCB_SelectedValueChanged);
+            // 
+            // objecttypeBindingSource
+            // 
+            this.objecttypeBindingSource.DataMember = "objecttype";
+            this.objecttypeBindingSource.DataSource = this.realestateofficeDataSet;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(19, 66);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(33, 18);
+            this.label13.TabIndex = 9;
+            this.label13.Text = "Тип";
+            // 
+            // editObjectB
+            // 
+            this.editObjectB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.editObjectB.Location = new System.Drawing.Point(228, 272);
+            this.editObjectB.Name = "editObjectB";
+            this.editObjectB.Size = new System.Drawing.Size(160, 33);
+            this.editObjectB.TabIndex = 8;
+            this.editObjectB.Text = "Редактировать";
+            this.editObjectB.UseVisualStyleBackColor = true;
+            this.editObjectB.Click += new System.EventHandler(this.openForm_Click);
+            // 
+            // addObjectB
+            // 
+            this.addObjectB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addObjectB.Location = new System.Drawing.Point(22, 272);
+            this.addObjectB.Name = "addObjectB";
+            this.addObjectB.Size = new System.Drawing.Size(160, 33);
+            this.addObjectB.TabIndex = 7;
+            this.addObjectB.Text = "Добавить";
+            this.addObjectB.UseVisualStyleBackColor = true;
+            this.addObjectB.Click += new System.EventHandler(this.addObjectB_Click);
+            // 
+            // longitudeObjectTB
+            // 
+            this.longitudeObjectTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.longitudeObjectTB.Location = new System.Drawing.Point(97, 164);
+            this.longitudeObjectTB.Name = "longitudeObjectTB";
+            this.longitudeObjectTB.Size = new System.Drawing.Size(291, 24);
+            this.longitudeObjectTB.TabIndex = 6;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(19, 167);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 18);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Долгота";
+            // 
+            // latitudeObjectTB
+            // 
+            this.latitudeObjectTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.latitudeObjectTB.Location = new System.Drawing.Point(97, 131);
+            this.latitudeObjectTB.Name = "latitudeObjectTB";
+            this.latitudeObjectTB.Size = new System.Drawing.Size(291, 24);
+            this.latitudeObjectTB.TabIndex = 4;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(19, 134);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 18);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Широта";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(19, 102);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(50, 18);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Адрес";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(158, 20);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(108, 25);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Объекты";
+            // 
+            // agentPanel
+            // 
+            this.agentPanel.Controls.Add(this.shareAgentNUD);
+            this.agentPanel.Controls.Add(this.editAgentB);
+            this.agentPanel.Controls.Add(this.addAgentB);
+            this.agentPanel.Controls.Add(this.label5);
+            this.agentPanel.Controls.Add(this.label6);
+            this.agentPanel.Controls.Add(this.fioAgentTB);
+            this.agentPanel.Controls.Add(this.label7);
+            this.agentPanel.Controls.Add(this.label8);
+            this.agentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.agentPanel.Location = new System.Drawing.Point(0, 0);
+            this.agentPanel.Name = "agentPanel";
+            this.agentPanel.Size = new System.Drawing.Size(419, 375);
+            this.agentPanel.TabIndex = 9;
+            // 
+            // shareAgentNUD
+            // 
+            this.shareAgentNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.shareAgentNUD.Location = new System.Drawing.Point(163, 124);
+            this.shareAgentNUD.Name = "shareAgentNUD";
+            this.shareAgentNUD.Size = new System.Drawing.Size(225, 26);
+            this.shareAgentNUD.TabIndex = 9;
+            // 
+            // editAgentB
+            // 
+            this.editAgentB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.editAgentB.Location = new System.Drawing.Point(133, 233);
+            this.editAgentB.Name = "editAgentB";
+            this.editAgentB.Size = new System.Drawing.Size(160, 33);
+            this.editAgentB.TabIndex = 8;
+            this.editAgentB.Text = "Редактировать";
+            this.editAgentB.UseVisualStyleBackColor = true;
+            this.editAgentB.Click += new System.EventHandler(this.openForm_Click);
+            // 
+            // addAgentB
+            // 
+            this.addAgentB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addAgentB.Location = new System.Drawing.Point(133, 194);
+            this.addAgentB.Name = "addAgentB";
+            this.addAgentB.Size = new System.Drawing.Size(160, 33);
+            this.addAgentB.TabIndex = 7;
+            this.addAgentB.Text = "Добавить";
+            this.addAgentB.UseVisualStyleBackColor = true;
+            this.addAgentB.Click += new System.EventHandler(this.addAgentB_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(19, 168);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 18);
+            this.label5.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(19, 127);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(138, 18);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Доля от комиссии";
+            // 
+            // fioAgentTB
+            // 
+            this.fioAgentTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fioAgentTB.Location = new System.Drawing.Point(97, 81);
+            this.fioAgentTB.Name = "fioAgentTB";
+            this.fioAgentTB.Size = new System.Drawing.Size(291, 24);
+            this.fioAgentTB.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(19, 84);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 18);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "ФИО";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(158, 20);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(118, 25);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Риэлторы";
+            // 
+            // clientPanel
+            // 
+            this.clientPanel.Controls.Add(this.editClientB);
+            this.clientPanel.Controls.Add(this.addClientB);
+            this.clientPanel.Controls.Add(this.emailClientB);
+            this.clientPanel.Controls.Add(this.label4);
+            this.clientPanel.Controls.Add(this.phoneClientTB);
+            this.clientPanel.Controls.Add(this.label3);
+            this.clientPanel.Controls.Add(this.fioClientTB);
+            this.clientPanel.Controls.Add(this.label2);
+            this.clientPanel.Controls.Add(this.label1);
+            this.clientPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clientPanel.Location = new System.Drawing.Point(0, 0);
+            this.clientPanel.Name = "clientPanel";
+            this.clientPanel.Size = new System.Drawing.Size(419, 375);
+            this.clientPanel.TabIndex = 0;
+            // 
+            // editClientB
+            // 
+            this.editClientB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.editClientB.Location = new System.Drawing.Point(149, 267);
+            this.editClientB.Name = "editClientB";
+            this.editClientB.Size = new System.Drawing.Size(160, 33);
+            this.editClientB.TabIndex = 8;
+            this.editClientB.Text = "Редактировать";
+            this.editClientB.UseVisualStyleBackColor = true;
+            this.editClientB.Click += new System.EventHandler(this.openForm_Click);
+            // 
+            // addClientB
+            // 
+            this.addClientB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addClientB.Location = new System.Drawing.Point(149, 228);
+            this.addClientB.Name = "addClientB";
+            this.addClientB.Size = new System.Drawing.Size(160, 33);
+            this.addClientB.TabIndex = 7;
+            this.addClientB.Text = "Добавить";
+            this.addClientB.UseVisualStyleBackColor = true;
+            this.addClientB.Click += new System.EventHandler(this.addClientB_Click);
+            // 
+            // emailClientB
+            // 
+            this.emailClientB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.emailClientB.Location = new System.Drawing.Point(97, 165);
+            this.emailClientB.Name = "emailClientB";
+            this.emailClientB.Size = new System.Drawing.Size(291, 24);
+            this.emailClientB.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(19, 168);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 18);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Почта";
+            // 
+            // phoneClientTB
+            // 
+            this.phoneClientTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.phoneClientTB.Location = new System.Drawing.Point(97, 124);
+            this.phoneClientTB.Name = "phoneClientTB";
+            this.phoneClientTB.Size = new System.Drawing.Size(291, 24);
+            this.phoneClientTB.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(19, 127);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Телефон";
+            // 
+            // fioClientTB
+            // 
+            this.fioClientTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fioClientTB.Location = new System.Drawing.Point(97, 81);
+            this.fioClientTB.Name = "fioClientTB";
+            this.fioClientTB.Size = new System.Drawing.Size(291, 24);
+            this.fioClientTB.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(19, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 18);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "ФИО";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(158, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Клиенты";
             // 
             // dealPanel
             // 
@@ -674,16 +1242,6 @@
             this.typeDemandCB.ValueMember = "type_id";
             this.typeDemandCB.SelectedValueChanged += new System.EventHandler(this.typeDemandCB_SelectedValueChanged);
             // 
-            // objecttypeBindingSource
-            // 
-            this.objecttypeBindingSource.DataMember = "objecttype";
-            this.objecttypeBindingSource.DataSource = this.realestateofficeDataSet;
-            // 
-            // realestateofficeDataSet
-            // 
-            this.realestateofficeDataSet.DataSetName = "realestateofficeDataSet";
-            this.realestateofficeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -724,11 +1282,6 @@
             this.agentDemandCB.Size = new System.Drawing.Size(307, 28);
             this.agentDemandCB.TabIndex = 21;
             this.agentDemandCB.ValueMember = "agent_id";
-            // 
-            // agentBindingSource
-            // 
-            this.agentBindingSource.DataMember = "agent";
-            this.agentBindingSource.DataSource = this.realestateofficeDataSet;
             // 
             // label19
             // 
@@ -775,11 +1328,6 @@
             this.clientDemandCB.TabIndex = 10;
             this.clientDemandCB.ValueMember = "client_id";
             // 
-            // clientBindingSource
-            // 
-            this.clientBindingSource.DataMember = "client";
-            this.clientBindingSource.DataSource = this.realestateofficeDataSet;
-            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -821,554 +1369,6 @@
             this.label27.Size = new System.Drawing.Size(153, 25);
             this.label27.TabIndex = 0;
             this.label27.Text = "Потребности";
-            // 
-            // supplyPanel
-            // 
-            this.supplyPanel.AutoScroll = true;
-            this.supplyPanel.Controls.Add(this.objectSupplyCB);
-            this.supplyPanel.Controls.Add(this.label24);
-            this.supplyPanel.Controls.Add(this.agentSupplyCB);
-            this.supplyPanel.Controls.Add(this.label23);
-            this.supplyPanel.Controls.Add(this.priceSupplyNUD);
-            this.supplyPanel.Controls.Add(this.label21);
-            this.supplyPanel.Controls.Add(this.clientSupplyCB);
-            this.supplyPanel.Controls.Add(this.label22);
-            this.supplyPanel.Controls.Add(this.editSupplyB);
-            this.supplyPanel.Controls.Add(this.addSupplyB);
-            this.supplyPanel.Controls.Add(this.label26);
-            this.supplyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.supplyPanel.Location = new System.Drawing.Point(0, 0);
-            this.supplyPanel.Name = "supplyPanel";
-            this.supplyPanel.Size = new System.Drawing.Size(419, 375);
-            this.supplyPanel.TabIndex = 20;
-            // 
-            // objectSupplyCB
-            // 
-            this.objectSupplyCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.objectSupplyCB.FormattingEnabled = true;
-            this.objectSupplyCB.Location = new System.Drawing.Point(97, 134);
-            this.objectSupplyCB.Name = "objectSupplyCB";
-            this.objectSupplyCB.Size = new System.Drawing.Size(307, 28);
-            this.objectSupplyCB.TabIndex = 24;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.Location = new System.Drawing.Point(19, 138);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(61, 18);
-            this.label24.TabIndex = 23;
-            this.label24.Text = "Объект";
-            // 
-            // agentSupplyCB
-            // 
-            this.agentSupplyCB.DataSource = this.agentBindingSource;
-            this.agentSupplyCB.DisplayMember = "fio";
-            this.agentSupplyCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.agentSupplyCB.FormattingEnabled = true;
-            this.agentSupplyCB.Location = new System.Drawing.Point(97, 98);
-            this.agentSupplyCB.Name = "agentSupplyCB";
-            this.agentSupplyCB.Size = new System.Drawing.Size(307, 28);
-            this.agentSupplyCB.TabIndex = 21;
-            this.agentSupplyCB.ValueMember = "agent_id";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label23.Location = new System.Drawing.Point(19, 102);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(67, 18);
-            this.label23.TabIndex = 20;
-            this.label23.Text = "Риэлтор";
-            // 
-            // priceSupplyNUD
-            // 
-            this.priceSupplyNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.priceSupplyNUD.Location = new System.Drawing.Point(97, 170);
-            this.priceSupplyNUD.Maximum = new decimal(new int[] {
-            1874919423,
-            2328306,
-            0,
-            0});
-            this.priceSupplyNUD.Name = "priceSupplyNUD";
-            this.priceSupplyNUD.Size = new System.Drawing.Size(307, 26);
-            this.priceSupplyNUD.TabIndex = 12;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.Location = new System.Drawing.Point(19, 175);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(43, 18);
-            this.label21.TabIndex = 11;
-            this.label21.Text = "Цена";
-            // 
-            // clientSupplyCB
-            // 
-            this.clientSupplyCB.DataSource = this.clientBindingSource;
-            this.clientSupplyCB.DisplayMember = "fio";
-            this.clientSupplyCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.clientSupplyCB.FormattingEnabled = true;
-            this.clientSupplyCB.Location = new System.Drawing.Point(97, 62);
-            this.clientSupplyCB.Name = "clientSupplyCB";
-            this.clientSupplyCB.Size = new System.Drawing.Size(307, 28);
-            this.clientSupplyCB.TabIndex = 10;
-            this.clientSupplyCB.ValueMember = "client_id";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.Location = new System.Drawing.Point(19, 66);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(58, 18);
-            this.label22.TabIndex = 9;
-            this.label22.Text = "Клиент";
-            // 
-            // editSupplyB
-            // 
-            this.editSupplyB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.editSupplyB.Location = new System.Drawing.Point(244, 272);
-            this.editSupplyB.Name = "editSupplyB";
-            this.editSupplyB.Size = new System.Drawing.Size(160, 33);
-            this.editSupplyB.TabIndex = 8;
-            this.editSupplyB.Text = "Редактировать";
-            this.editSupplyB.UseVisualStyleBackColor = true;
-            this.editSupplyB.Click += new System.EventHandler(this.openForm_Click);
-            // 
-            // addSupplyB
-            // 
-            this.addSupplyB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addSupplyB.Location = new System.Drawing.Point(22, 272);
-            this.addSupplyB.Name = "addSupplyB";
-            this.addSupplyB.Size = new System.Drawing.Size(160, 33);
-            this.addSupplyB.TabIndex = 7;
-            this.addSupplyB.Text = "Добавить";
-            this.addSupplyB.UseVisualStyleBackColor = true;
-            this.addSupplyB.Click += new System.EventHandler(this.addSupplyB_Click);
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.Location = new System.Drawing.Point(127, 21);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(160, 25);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Предложения";
-            // 
-            // objectPanel
-            // 
-            this.objectPanel.AutoScroll = true;
-            this.objectPanel.Controls.Add(this.areaObjectTB);
-            this.objectPanel.Controls.Add(this.label17);
-            this.objectPanel.Controls.Add(this.roomCountObjectNUD);
-            this.objectPanel.Controls.Add(this.label16);
-            this.objectPanel.Controls.Add(this.floorsObjectNUD);
-            this.objectPanel.Controls.Add(this.label15);
-            this.objectPanel.Controls.Add(this.floorObjectNUD);
-            this.objectPanel.Controls.Add(this.label14);
-            this.objectPanel.Controls.Add(this.addressObjectСB);
-            this.objectPanel.Controls.Add(this.typeObjectCB);
-            this.objectPanel.Controls.Add(this.label13);
-            this.objectPanel.Controls.Add(this.editObjectB);
-            this.objectPanel.Controls.Add(this.addObjectB);
-            this.objectPanel.Controls.Add(this.longitudeObjectTB);
-            this.objectPanel.Controls.Add(this.label9);
-            this.objectPanel.Controls.Add(this.latitudeObjectTB);
-            this.objectPanel.Controls.Add(this.label10);
-            this.objectPanel.Controls.Add(this.label11);
-            this.objectPanel.Controls.Add(this.label12);
-            this.objectPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.objectPanel.Location = new System.Drawing.Point(0, 0);
-            this.objectPanel.Name = "objectPanel";
-            this.objectPanel.Size = new System.Drawing.Size(419, 375);
-            this.objectPanel.TabIndex = 10;
-            // 
-            // areaObjectTB
-            // 
-            this.areaObjectTB.Enabled = false;
-            this.areaObjectTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.areaObjectTB.Location = new System.Drawing.Point(272, 231);
-            this.areaObjectTB.Name = "areaObjectTB";
-            this.areaObjectTB.Size = new System.Drawing.Size(116, 24);
-            this.areaObjectTB.TabIndex = 18;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(181, 233);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 18);
-            this.label17.TabIndex = 17;
-            this.label17.Text = "Площадь";
-            // 
-            // roomCountObjectNUD
-            // 
-            this.roomCountObjectNUD.Enabled = false;
-            this.roomCountObjectNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.roomCountObjectNUD.Location = new System.Drawing.Point(333, 196);
-            this.roomCountObjectNUD.Name = "roomCountObjectNUD";
-            this.roomCountObjectNUD.Size = new System.Drawing.Size(55, 26);
-            this.roomCountObjectNUD.TabIndex = 16;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(180, 199);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(147, 18);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Количество комнат";
-            // 
-            // floorsObjectNUD
-            // 
-            this.floorsObjectNUD.Enabled = false;
-            this.floorsObjectNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.floorsObjectNUD.Location = new System.Drawing.Point(110, 232);
-            this.floorsObjectNUD.Name = "floorsObjectNUD";
-            this.floorsObjectNUD.Size = new System.Drawing.Size(55, 26);
-            this.floorsObjectNUD.TabIndex = 14;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(19, 234);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 18);
-            this.label15.TabIndex = 13;
-            this.label15.Text = "Этажность";
-            // 
-            // floorObjectNUD
-            // 
-            this.floorObjectNUD.Enabled = false;
-            this.floorObjectNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.floorObjectNUD.Location = new System.Drawing.Point(110, 194);
-            this.floorObjectNUD.Name = "floorObjectNUD";
-            this.floorObjectNUD.Size = new System.Drawing.Size(55, 26);
-            this.floorObjectNUD.TabIndex = 12;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(19, 199);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 18);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "Этаж";
-            // 
-            // addressObjectСB
-            // 
-            this.addressObjectСB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addressObjectСB.FormattingEnabled = true;
-            this.addressObjectСB.Location = new System.Drawing.Point(97, 96);
-            this.addressObjectСB.Name = "addressObjectСB";
-            this.addressObjectСB.Size = new System.Drawing.Size(291, 28);
-            this.addressObjectСB.TabIndex = 10;
-            // 
-            // typeObjectCB
-            // 
-            this.typeObjectCB.DataSource = this.objecttypeBindingSource;
-            this.typeObjectCB.DisplayMember = "typename";
-            this.typeObjectCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.typeObjectCB.FormattingEnabled = true;
-            this.typeObjectCB.Location = new System.Drawing.Point(97, 62);
-            this.typeObjectCB.Name = "typeObjectCB";
-            this.typeObjectCB.Size = new System.Drawing.Size(291, 28);
-            this.typeObjectCB.TabIndex = 10;
-            this.typeObjectCB.ValueMember = "type_id";
-            this.typeObjectCB.SelectedValueChanged += new System.EventHandler(this.typeObjectCB_SelectedValueChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(19, 66);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(33, 18);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Тип";
-            // 
-            // editObjectB
-            // 
-            this.editObjectB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.editObjectB.Location = new System.Drawing.Point(228, 272);
-            this.editObjectB.Name = "editObjectB";
-            this.editObjectB.Size = new System.Drawing.Size(160, 33);
-            this.editObjectB.TabIndex = 8;
-            this.editObjectB.Text = "Редактировать";
-            this.editObjectB.UseVisualStyleBackColor = true;
-            this.editObjectB.Click += new System.EventHandler(this.openForm_Click);
-            // 
-            // addObjectB
-            // 
-            this.addObjectB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addObjectB.Location = new System.Drawing.Point(22, 272);
-            this.addObjectB.Name = "addObjectB";
-            this.addObjectB.Size = new System.Drawing.Size(160, 33);
-            this.addObjectB.TabIndex = 7;
-            this.addObjectB.Text = "Добавить";
-            this.addObjectB.UseVisualStyleBackColor = true;
-            this.addObjectB.Click += new System.EventHandler(this.addObjectB_Click);
-            // 
-            // longitudeObjectTB
-            // 
-            this.longitudeObjectTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.longitudeObjectTB.Location = new System.Drawing.Point(97, 164);
-            this.longitudeObjectTB.Name = "longitudeObjectTB";
-            this.longitudeObjectTB.Size = new System.Drawing.Size(291, 24);
-            this.longitudeObjectTB.TabIndex = 6;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(19, 167);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 18);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Долгота";
-            // 
-            // latitudeObjectTB
-            // 
-            this.latitudeObjectTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.latitudeObjectTB.Location = new System.Drawing.Point(97, 131);
-            this.latitudeObjectTB.Name = "latitudeObjectTB";
-            this.latitudeObjectTB.Size = new System.Drawing.Size(291, 24);
-            this.latitudeObjectTB.TabIndex = 4;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(19, 134);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 18);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Широта";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(19, 102);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(50, 18);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Адрес";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(158, 20);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 25);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Объекты";
-            // 
-            // agentPanel
-            // 
-            this.agentPanel.Controls.Add(this.shareAgentNUD);
-            this.agentPanel.Controls.Add(this.editAgentB);
-            this.agentPanel.Controls.Add(this.addAgentB);
-            this.agentPanel.Controls.Add(this.label5);
-            this.agentPanel.Controls.Add(this.label6);
-            this.agentPanel.Controls.Add(this.fioAgentTB);
-            this.agentPanel.Controls.Add(this.label7);
-            this.agentPanel.Controls.Add(this.label8);
-            this.agentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.agentPanel.Location = new System.Drawing.Point(0, 0);
-            this.agentPanel.Name = "agentPanel";
-            this.agentPanel.Size = new System.Drawing.Size(419, 375);
-            this.agentPanel.TabIndex = 9;
-            // 
-            // shareAgentNUD
-            // 
-            this.shareAgentNUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.shareAgentNUD.Location = new System.Drawing.Point(163, 124);
-            this.shareAgentNUD.Name = "shareAgentNUD";
-            this.shareAgentNUD.Size = new System.Drawing.Size(225, 26);
-            this.shareAgentNUD.TabIndex = 9;
-            // 
-            // editAgentB
-            // 
-            this.editAgentB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.editAgentB.Location = new System.Drawing.Point(127, 258);
-            this.editAgentB.Name = "editAgentB";
-            this.editAgentB.Size = new System.Drawing.Size(160, 33);
-            this.editAgentB.TabIndex = 8;
-            this.editAgentB.Text = "Редактировать";
-            this.editAgentB.UseVisualStyleBackColor = true;
-            this.editAgentB.Click += new System.EventHandler(this.openForm_Click);
-            // 
-            // addAgentB
-            // 
-            this.addAgentB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addAgentB.Location = new System.Drawing.Point(127, 219);
-            this.addAgentB.Name = "addAgentB";
-            this.addAgentB.Size = new System.Drawing.Size(160, 33);
-            this.addAgentB.TabIndex = 7;
-            this.addAgentB.Text = "Добавить";
-            this.addAgentB.UseVisualStyleBackColor = true;
-            this.addAgentB.Click += new System.EventHandler(this.addAgentB_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(19, 168);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 18);
-            this.label5.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(19, 127);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 18);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Доля от комиссии";
-            // 
-            // fioAgentTB
-            // 
-            this.fioAgentTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.fioAgentTB.Location = new System.Drawing.Point(97, 81);
-            this.fioAgentTB.Name = "fioAgentTB";
-            this.fioAgentTB.Size = new System.Drawing.Size(291, 24);
-            this.fioAgentTB.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(19, 84);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 18);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "ФИО";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(158, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 25);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Риэлторы";
-            // 
-            // clientPanel
-            // 
-            this.clientPanel.Controls.Add(this.editClientB);
-            this.clientPanel.Controls.Add(this.addClientB);
-            this.clientPanel.Controls.Add(this.emailClientB);
-            this.clientPanel.Controls.Add(this.label4);
-            this.clientPanel.Controls.Add(this.phoneClientTB);
-            this.clientPanel.Controls.Add(this.label3);
-            this.clientPanel.Controls.Add(this.fioClientTB);
-            this.clientPanel.Controls.Add(this.label2);
-            this.clientPanel.Controls.Add(this.label1);
-            this.clientPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clientPanel.Location = new System.Drawing.Point(0, 0);
-            this.clientPanel.Name = "clientPanel";
-            this.clientPanel.Size = new System.Drawing.Size(419, 375);
-            this.clientPanel.TabIndex = 0;
-            // 
-            // editClientB
-            // 
-            this.editClientB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.editClientB.Location = new System.Drawing.Point(127, 258);
-            this.editClientB.Name = "editClientB";
-            this.editClientB.Size = new System.Drawing.Size(160, 33);
-            this.editClientB.TabIndex = 8;
-            this.editClientB.Text = "Редактировать";
-            this.editClientB.UseVisualStyleBackColor = true;
-            this.editClientB.Click += new System.EventHandler(this.openForm_Click);
-            // 
-            // addClientB
-            // 
-            this.addClientB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addClientB.Location = new System.Drawing.Point(127, 219);
-            this.addClientB.Name = "addClientB";
-            this.addClientB.Size = new System.Drawing.Size(160, 33);
-            this.addClientB.TabIndex = 7;
-            this.addClientB.Text = "Добавить";
-            this.addClientB.UseVisualStyleBackColor = true;
-            this.addClientB.Click += new System.EventHandler(this.addClientB_Click);
-            // 
-            // emailClientB
-            // 
-            this.emailClientB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.emailClientB.Location = new System.Drawing.Point(97, 165);
-            this.emailClientB.Name = "emailClientB";
-            this.emailClientB.Size = new System.Drawing.Size(291, 24);
-            this.emailClientB.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(19, 168);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 18);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Почта";
-            // 
-            // phoneClientTB
-            // 
-            this.phoneClientTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.phoneClientTB.Location = new System.Drawing.Point(97, 124);
-            this.phoneClientTB.Name = "phoneClientTB";
-            this.phoneClientTB.Size = new System.Drawing.Size(291, 24);
-            this.phoneClientTB.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(19, 127);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Телефон";
-            // 
-            // fioClientTB
-            // 
-            this.fioClientTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.fioClientTB.Location = new System.Drawing.Point(97, 81);
-            this.fioClientTB.Name = "fioClientTB";
-            this.fioClientTB.Size = new System.Drawing.Size(291, 24);
-            this.fioClientTB.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(19, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ФИО";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(158, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Клиенты";
             // 
             // objecttypeTableAdapter
             // 
@@ -1415,6 +1415,23 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            this.supplyPanel.ResumeLayout(false);
+            this.supplyPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.priceSupplyNUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
+            this.objectPanel.ResumeLayout(false);
+            this.objectPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roomCountObjectNUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.floorsObjectNUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.floorObjectNUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.objecttypeBindingSource)).EndInit();
+            this.agentPanel.ResumeLayout(false);
+            this.agentPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.shareAgentNUD)).EndInit();
+            this.clientPanel.ResumeLayout(false);
+            this.clientPanel.PerformLayout();
             this.dealPanel.ResumeLayout(false);
             this.dealPanel.PerformLayout();
             this.demandPanel.ResumeLayout(false);
@@ -1426,24 +1443,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.maxFloorDemNUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minFloorDemNUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxPriceDemandNUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.objecttypeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.realestateofficeDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minPriceDemandNUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
-            this.supplyPanel.ResumeLayout(false);
-            this.supplyPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.priceSupplyNUD)).EndInit();
-            this.objectPanel.ResumeLayout(false);
-            this.objectPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roomCountObjectNUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.floorsObjectNUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.floorObjectNUD)).EndInit();
-            this.agentPanel.ResumeLayout(false);
-            this.agentPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.shareAgentNUD)).EndInit();
-            this.clientPanel.ResumeLayout(false);
-            this.clientPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }

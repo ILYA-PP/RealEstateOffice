@@ -47,6 +47,8 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientTableAdapter = new RealStateOffice.realestateofficeDataSetTableAdapters.clientTableAdapter();
             this.tableAdapterManager = new RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager();
+            this.demandAgentB = new System.Windows.Forms.ToolStripLabel();
+            this.supplyAgentB = new System.Windows.Forms.ToolStripLabel();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingNavigator)).BeginInit();
             this.clientBindingNavigator.SuspendLayout();
@@ -84,14 +86,16 @@
             this.clientBindingNavigatorSaveItem,
             this.toolStripLabel1,
             this.searchTB,
-            this.resetB});
+            this.resetB,
+            this.demandAgentB,
+            this.supplyAgentB});
             this.clientBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.clientBindingNavigator.MoveFirstItem = null;
             this.clientBindingNavigator.MoveLastItem = null;
             this.clientBindingNavigator.MoveNextItem = null;
             this.clientBindingNavigator.MovePreviousItem = null;
             this.clientBindingNavigator.Name = "clientBindingNavigator";
-            this.clientBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.clientBindingNavigator.Padding = new System.Windows.Forms.Padding(0);
             this.clientBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
             this.clientBindingNavigator.Size = new System.Drawing.Size(511, 36);
             this.clientBindingNavigator.TabIndex = 1;
@@ -231,6 +235,20 @@
             this.tableAdapterManager.supplyTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = RealStateOffice.realestateofficeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // demandAgentB
+            // 
+            this.demandAgentB.Name = "demandAgentB";
+            this.demandAgentB.Size = new System.Drawing.Size(80, 33);
+            this.demandAgentB.Text = "Потребности";
+            this.demandAgentB.Click += new System.EventHandler(this.demandAgentB_Click);
+            // 
+            // supplyAgentB
+            // 
+            this.supplyAgentB.Name = "supplyAgentB";
+            this.supplyAgentB.Size = new System.Drawing.Size(84, 33);
+            this.supplyAgentB.Text = "Предложения";
+            this.supplyAgentB.Click += new System.EventHandler(this.supplyAgentB_Click);
+            // 
             // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,5 +290,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.ToolStripButton resetB;
+        private System.Windows.Forms.ToolStripLabel demandAgentB;
+        private System.Windows.Forms.ToolStripLabel supplyAgentB;
     }
 }

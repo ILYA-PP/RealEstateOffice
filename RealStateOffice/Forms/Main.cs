@@ -160,6 +160,7 @@ namespace RealStateOffice
                         obj.address_id = (int)addressObjectСB.SelectedValue;
                         obj.latitude = float.Parse(latitudeObjectTB.Text.Replace(".", ","));
                         obj.longitude = float.Parse(longitudeObjectTB.Text.Replace(".", ","));
+                        obj.type_id = (int)typeObjectCB.SelectedValue;
                         db._object.Add(obj);
                         switch (typeObjectCB.SelectedValue)
                         {

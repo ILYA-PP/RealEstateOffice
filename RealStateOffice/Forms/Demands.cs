@@ -18,6 +18,15 @@ namespace RealStateOffice
             InitializeComponent();
             GetAddress();
         }
+        public Demands(int id, bool client)
+        {
+            InitializeComponent();
+            if(client)
+                demandBindingSource.Filter = $"[client_id] = {id}";
+            else
+                demandBindingSource.Filter = $"[agent_id] = {id}";
+            GetAddress();
+        }
 
         private void demandBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {

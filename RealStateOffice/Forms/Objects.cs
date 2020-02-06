@@ -51,7 +51,7 @@ namespace RealStateOffice
                 {
                     int j = (int)r.Cells[4].Value;
                     string typeName = (from t in db.objecttype
-                                       where t.type_id == i
+                                       where t.type_id == j
                                        select t.typename).First();
                     r.Cells[6].Value = typeName;
                 }

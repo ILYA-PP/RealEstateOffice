@@ -18,6 +18,15 @@ namespace RealStateOffice
             InitializeComponent();
             GetObject();
         }
+        public Supplies(int id, bool client)
+        {
+            InitializeComponent();
+            if (client)
+                supplyBindingSource.Filter = $"[client_id] = {id}";
+            else
+                supplyBindingSource.Filter = $"[agent_id] = {id}";
+            GetObject();
+        }
 
         private void supplyBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
